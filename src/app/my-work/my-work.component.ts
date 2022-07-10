@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyWorkComponent implements OnInit {
 
+  card = document.querySelector('.card');
+  container = document.querySelector('.cartContainer');
+
   constructor() { }
 
   ngOnInit(): void {
+    this.container.addEventListener('mousemove', (e) => {
+      // console.log(e.pageX);
+    });
   }
+
+
+
+
 
 }
