@@ -1,0 +1,61 @@
+.skills {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.skills h2 {
+    margin-bottom: 100px;
+}
+
+.iconContainer {
+    gap: 80px;
+}
+
+.iconContainer div {
+    gap: 80px;
+}
+
+.iconContainer i {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.iconContainer span {
+    z-index: 2;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    background: #5221e6;
+    border-radius: 50%;
+    box-sizing: border-box;
+    transition: 255ms;
+}
+
+.iconContainer u {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: white;
+    text-align: center;
+    border-radius: 20px;
+    height: 120px;
+    width: 180px;
+    padding-bottom: 25px;
+    text-decoration: none;
+    position: absolute;
+    top: 60px;
+    color: black;
+    box-sizing: border-box;
+    transition: 255ms;
+}
+
+.purplefilter {
+    filter: invert(18%) sepia(60%) saturate(2635%) hue-rotate(243deg) brightness(83%) contrast(119%);
+}

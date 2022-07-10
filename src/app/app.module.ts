@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StartSideComponent } from './start-side/start-side.component';
 import { HeaderComponent } from './header/header.component';
+import { SkillsComponent } from './skills/skills.component';
+import { MyWorkComponent } from './my-work/my-work.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StartSideComponent,
     HeaderComponent,
+    SkillsComponent,
+    MyWorkComponent,
   ],
   imports: [
     BrowserModule,

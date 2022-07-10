@@ -1,6 +1,49 @@
-.background {
-    height: 100vh;
-    width: 100vw;
-    background: rgb(31, 31, 31);
-    background: linear-gradient(90deg, rgba(31, 31, 31, 1) 25%, rgba(7, 0, 13, 1) 100%);
+.welcome {
+    height: calc(90vh - 50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcomeText {
+    display: flex;
+    flex-direction: column;
+    font-size: 48px;
+    color: white;
+}
+
+.welcomeText u {
+    text-decoration: none;
+    color: #5221e6;
+}
+
+.welcomeContact {
+    margin-top: 40px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.welcomeText a {
+    width: fit-content;
+    padding: 8px 80px;
+    background: white;
+    color: #5221e6;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.welcomeImg {
+    height: 500px;
+    width: 500px;
+    background-color: #5221e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.welcomeImg img {
+    height: 350px;
 }
