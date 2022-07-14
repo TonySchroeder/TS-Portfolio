@@ -1,8 +1,8 @@
 <div class="overContainer">
     <div class="myWork widthContainer">
         <h2>My Work</h2>
-        <div class="cartContainer">
-            <div class="cart">
+        <div id="cartID" class="cartContainer" (mouseover)="hoverCart = true" (mouseleave)="setFalse()" (mousemove)="mouseMoved($event)">
+            <div id="innerCard" class="cart">
                 <div class="cartText">
                     <h3>The Curse of Money Island</h3>
                     <button class="cartButton">Open</button>
@@ -10,7 +10,7 @@
                 <div class="imageContainer">
                     <div class="innerImageContainer">
                         <img class="bgImage" src="assets/img/monkeyBG.png" alt="">
-                        <img class="flag" src="assets/img/flage.png" alt="">
+                        <img id="flagID" class="flag" src="assets/img/flage.png" alt="">
                     </div>
                 </div>
             </div>
