@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
 
 
 @Component({
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./my-work.component.scss']
 
 })
+
 export class MyWorkComponent implements OnInit {
 
   hoverCart: boolean;
@@ -24,12 +25,13 @@ this.hoverCart = false;
 
 mouseMoved(event: MouseEvent) {
   let cart =  document.getElementById('innerCard');
-  let xAxis=(document.getElementById('cartID').getBoundingClientRect().width / 2 - event.x) / 30;
-  let yAxis=(document.getElementById('cartID').getBoundingClientRect().height / 2 - event.y) / 30;
-  document.getElementById('flagID').style.transform = 'translateZ(150px)'
+  let xAxis=(document.getElementById('cartID').getBoundingClientRect().width / 2 - event.offsetX) / 25;
+  let yAxis=(document.getElementById('cartID').getBoundingClientRect().height / 2 - event.offsetY) / 25;
+  document.getElementById('cartID').style.perspective = '1000px';
+  document.getElementById('flagID').style.transform = 'translateZ(150px)';
   cart.style.transition = 'none';
   cart.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-
+  // console.log(event);
 }
 
 
@@ -37,6 +39,12 @@ setFalse(){
   let cart =  document.getElementById('innerCard');
   cart.style.transition = 'all 0.5s ease';
   cart.style.transform = `rotateY(0deg) rotateX(0deg)`;
+  document.getElementById('flagID').style.transform = 'translateZ(0px)';
+}
+
+
+mouseLog(event: MouseEvent){
+  console.log(event);
 }
 
 

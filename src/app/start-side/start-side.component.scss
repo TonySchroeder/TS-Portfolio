@@ -1,3 +1,10 @@
+.overContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
 .welcome {
     height: calc(90vh - 50px);
     display: flex;
@@ -19,11 +26,15 @@
 
 .welcomeContact {
     margin-top: 40px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    // text-align: center;
     white-space: nowrap;
 }
 
-.welcomeText a {
+#talkID {
+    display: flex;
+    justify-content: center;
     width: fit-content;
     padding: 8px 80px;
     background: white;
@@ -33,20 +44,49 @@
     text-decoration: none;
     font-size: 28px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+}
+
+#mailID {
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 8px 8px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+}
+
+#mailID img {
+    filter: invert(17%) sepia(61%) saturate(6917%) hue-rotate(255deg) brightness(87%) contrast(109%);
 }
 
 .welcomeImg {
+    position: relative;
     height: 500px;
     width: 500px;
-    background-color: #5221e6;
+    // background-color: #5221e6;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    // box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
 
+.bgForImg {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    background-color: #5221e6;
+    border-radius: 50%;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
 .welcomeImg img {
+    z-index: 2;
     height: 500px;
 }
