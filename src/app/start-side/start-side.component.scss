@@ -1,4 +1,4 @@
-.overContainer {
+#startID {
     position: fixed;
     top: 0;
     left: 0;
@@ -28,35 +28,28 @@
     margin-top: 40px;
     display: flex;
     justify-content: center;
-    // text-align: center;
     white-space: nowrap;
 }
 
-#talkID {
+#underWContact {
     display: flex;
     justify-content: center;
-    width: fit-content;
-    padding: 8px 80px;
+    width: 350px;
+    padding: 8px 8px;
     background: white;
     color: #5221e6;
     border: 2px solid white;
     border-radius: 20px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+#talkID {
     text-decoration: none;
     font-size: 28px;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
     transition: all 0.5s ease;
 }
 
 #mailID {
-    // display: flex;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-    padding: 8px 8px;
-    border: 2px solid white;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
     transition: all 0.5s ease;
 }
 
@@ -68,12 +61,10 @@
     position: relative;
     height: 500px;
     width: 500px;
-    // background-color: #5221e6;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    // box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
 

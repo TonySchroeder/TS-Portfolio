@@ -7,7 +7,9 @@ import { Component, OnInit, HostListener, IterableDiffers } from '@angular/core'
 })
 export class StartSideComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit(): void {
   }
@@ -15,44 +17,84 @@ export class StartSideComponent implements OnInit {
 
 
   @HostListener("window:scroll", []) onWindowScroll() {
-    // do some stuff here when the window is scrolled
     const verticalOffset = window.pageYOffset
-          || document.documentElement.scrollTop
-          || document.body.scrollTop || 0;
-          // console.log(verticalOffset);
-          this.fixOnScroll(verticalOffset);
+      || document.documentElement.scrollTop
+      || document.body.scrollTop || 0;
+    // console.log(verticalOffset);
+    if(window.innerWidth > 1800){
+      this.textImgMoveOnScroll(verticalOffset);
+      document.getElementById('startID').style.position = 'fixed';
+      document.getElementById('skillID').style.marginTop = 'calc(90vh - 50px)';
+    } else  if(window.innerWidth < 1800){
+      document.getElementById('startID').style.position = 'relative';
+      document.getElementById('skillID').style.marginTop = '0px';
+    }
   }
 
 
-  fixOnScroll(verticalOffset){
+  textImgMoveOnScroll(verticalOffset) {
     let opacityValue = 1 - verticalOffset / 350;
     let opacityFix = 1 - 450 / 350;
-  if(verticalOffset < 450){
+    this.slideTextAndImage(verticalOffset, opacityValue, opacityFix);
+    this.changeContactButton(verticalOffset);
+  }
+
+
+
+  slideTextAndImage(verticalOffset, opacityValue, opacityFix) {
+    if (verticalOffset < 450) {
+      this.movementOfTextAndImg(verticalOffset, opacityValue);
+    } else if (verticalOffset >= 450) {
+      this.standStillOfTextAndImg(opacityFix);
+    }
+  }
+
+
+  movementOfTextAndImg(verticalOffset, opacityValue) {
     document.getElementById('bgID').style.opacity = `${opacityValue}`;
     document.getElementById('welcomeTextID').style.transform = `translateX(-${verticalOffset}px)`;
     document.getElementById('welcomeImgID').style.transform = `translateX(${verticalOffset}px)`;
-    // document.querySelectorAll('i').style.opacity = `${opacityValue}`;
+    if (verticalOffset < 350) {
+      document.getElementById('underWContact').style.width = `calc(350px - (${verticalOffset}px / 2))`;
+    } else if (verticalOffset > 350) {
+      document.getElementById('underWContact').style.width = `calc(350px - (${verticalOffset}px / 1.45))`;
+    }
     for (let i = 0; i < 4; i++) {
       document.getElementById(`iText${i}`).style.opacity = `${opacityValue}`;
     }
-  } else  if (verticalOffset >= 450) {
+  }
+
+
+  standStillOfTextAndImg(opacityFix) {
     document.getElementById('bgID').style.opacity = `${opacityFix}`;
     document.getElementById('welcomeTextID').style.transform = `translateX(-450px)`;
     document.getElementById('welcomeImgID').style.transform = `translateX(450px)`;
+    document.getElementById('underWContact').style.width = `calc(350px - (450px / 1.45))`;
     for (let i = 0; i < 4; i++) {
       document.getElementById(`iText${i}`).style.opacity = `${opacityFix}`;
     }
   }
-  if(verticalOffset > 225){
-    document.getElementById('wContactID').style.justifyContent = `start`;
-    document.getElementById('wContactID').style.marginLeft = `125px`;
-    document.getElementById('talkID').style.display = `none`;
-    document.getElementById('mailID').style.display = `flex`;
-  } else if (verticalOffset < 225) {
-    document.getElementById('wContactID').style.justifyContent = `center`;
-    document.getElementById('wContactID').style.marginLeft = ``;
-    document.getElementById('talkID').style.display = `flex`;
-    document.getElementById('mailID').style.display = `none`;
+
+
+  changeContactButton(verticalOffset) {
+    if (verticalOffset > 350) {
+      document.getElementById('wContactID').style.justifyContent = `start`;
+      document.getElementById('wContactID').style.marginLeft = `125px`;
+      document.getElementById('talkID').style.display = `none`;
+      document.getElementById('mailID').style.display = `flex`;
+    } else if (verticalOffset < 350) {
+      document.getElementById('wContactID').style.justifyContent = `center`;
+      document.getElementById('wContactID').style.marginLeft = ``;
+      document.getElementById('talkID').style.display = `flex`;
+      document.getElementById('mailID').style.display = `none`;
+    }
   }
-  }
+
+
+
+
+
+
+
+
 }
