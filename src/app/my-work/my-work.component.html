@@ -1,8 +1,8 @@
 <div class="overContainer">
     <div class="myWork widthContainer">
         <h2>My Work</h2>
-        <div id="cartID" class="cartContainer" (mouseleave)="setFalse()" (mousemove)="mouseMoved($event)">
-            <div id="innerCard" class="cart">
+        <div id="cartID1" class="cartContainer" (mouseleave)="setFalse('1')" (mousemove)="mouseMoved($event, '1')">
+            <div id="innerCard1" class="cart">
                 <div class="cartText">
                     <h3>The Curse of Money Island</h3>
                     <button class="cartButton">Open</button>
@@ -10,43 +10,61 @@
                 <div class="imageContainer">
                     <div class="innerImageContainer">
                         <img class="bgImage" src="assets/img/monkeyBG.png" alt="">
-                        <img id="flagID" class="flag" src="assets/img/flage.png" alt="">
+                        <img id="BigImgID1" class="flag" src="assets/img/flage.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
 
 
-        <div id="cartID2" class="cartContainer" (mouseleave)="setFalse() " (mousemove)="mouseMoved($event) ">
-            <div id="innerCard2 " class="cart ">
+        <div id="cartID2" class="cartContainer" (mouseleave)="setFalse('2') " (mousemove)="mouseMoved($event, '2') ">
+            <div id="innerCard2 " class="cart rowrevers">
                 <div class="cartText ">
-                    <h3>The Curse of Money Island</h3>
+                    <h3>Ring of Fire</h3>
                     <button class="cartButton ">Open</button>
                 </div>
                 <div class="imageContainer ">
-                    <div class="innerImageContainer ">
-                        <img class="bgImage " src="assets/img/monkeyBG.png " alt=" ">
-                        <img id="ringID " class="flag " src="assets/img/flage.png " alt=" ">
+                    <div class="innerImageContainer ringBG">
+                        <!-- <img class="bgImage " src="assets/img/monkeyBG.png " alt=" "> -->
+                        <img id="BigImgID2" class="flag " src="assets/img/only-ring.png" alt=" ">
                     </div>
                 </div>
             </div>
         </div>
 
 
-        <div id="cartID3 " class="cartContainer " (mouseleave)="setFalse() " (mousemove)="mouseMoved($event) ">
+        <div id="cartID3 " class="cartContainer " (mouseleave)="setFalse('3') " (mousemove)="mouseMoved($event, '3') ">
             <div id="innerCard3 " class="cart ">
                 <div class="cartText ">
-                    <h3>The Curse of Money Island</h3>
+                    <h3>Join</h3>
                     <button class="cartButton ">Open</button>
                 </div>
                 <div class="imageContainer ">
                     <div class="innerImageContainer ">
-                        <img class="bgImage " src="assets/img/monkeyBG.png " alt=" ">
-                        <img id="xID " class="flag " src="assets/img/flage.png " alt=" ">
+                        <img class="bgImage " src="assets/img/joinbg.png" alt=" ">
+                        <img id="BigImgID3" class="flag " src="assets/img/joinbig.png" alt=" ">
                     </div>
                 </div>
             </div>
         </div>
+
+
+        <div id="cartID4 " class="cartContainer " (mouseleave)="setFalse('4') " (mousemove)="mouseMoved($event, '4') ">
+            <div id="innerCard4 " class="cart rowrevers">
+                <div class="cartText ">
+                    <h3>Tic Tac Toe</h3>
+                    <button class="cartButton ">Open</button>
+                </div>
+                <div class="imageContainer ">
+                    <div class="innerImageContainer ">
+                        <img class="bgImage " src="assets/img/tictactoebg.png" alt=" ">
+                        <img id="BigImgID4" class="flag " src="assets/img/tic tac toe img.png" alt=" ">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
 
     </div>
 </div>
