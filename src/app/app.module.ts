@@ -7,6 +7,7 @@ import { StartSideComponent } from './start-side/start-side.component';
 import { HeaderComponent } from './header/header.component';
 import { SkillsComponent } from './skills/skills.component';
 import { MyWorkComponent } from './my-work/my-work.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { MyWorkComponent } from './my-work/my-work.component';
     HeaderComponent,
     SkillsComponent,
     MyWorkComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
