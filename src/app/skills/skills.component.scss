@@ -7,6 +7,27 @@
     color: white;
 }
 
+.skillbgForImg {
+    position: absolute;
+    top: calc(-45vh - 275px);
+    left: 50%;
+    height: 500px;
+    width: 500px;
+    transform: translateX(-50%);
+    background-color: #5221e6;
+    border-radius: 50%;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.skillbgForImg img {
+    z-index: 2;
+    height: 500px;
+}
+
 .skills h2 {
     margin-bottom: 100px;
 }

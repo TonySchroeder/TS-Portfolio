@@ -8,20 +8,25 @@ import { Component, OnInit } from '@angular/core';
 export class ContactComponent implements OnInit {
 
   constructor() {
-   }
+  }
 
   ngOnInit(): void {
-    // this.slideToRight();
+
     // this.addHight();
   }
 
 
-slideToRight(){
-  document.getElementById('mainContainer').style.marginLeft = '1600px';
-}
+  slideToLeft() {
+    document.getElementById('startID').style.display = 'flex';
+    document.getElementById('mainContainer').style.marginLeft = '0px';
+    document.getElementById('contact').style.width = '0px';
+    document.getElementById('skillbgForImgID').style.display = 'none';
+    document.getElementById('skillID').style.marginTop = 'calc(90vh - 50px)';
+  }
 
-addHight(){
-  document.getElementById('messageID').style.height = '200px';
-}
+  addHight() {
+    document.getElementById('messageID').style.transition = 'all 0.255s ease';
+    document.getElementById('messageID').style.height = '200px';
+  }
 
 }

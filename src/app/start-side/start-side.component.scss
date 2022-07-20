@@ -32,8 +32,9 @@
 }
 
 #underWContact {
+    position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 350px;
     padding: 8px 8px;
     background: white;
@@ -41,6 +42,7 @@
     border: 2px solid white;
     border-radius: 20px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 #talkID {
@@ -55,6 +57,28 @@
 
 #mailID img {
     filter: invert(17%) sepia(61%) saturate(6917%) hue-rotate(255deg) brightness(87%) contrast(109%);
+}
+
+.rightArrow {
+    position: absolute;
+    right: 10px;
+    height: 35px;
+    filter: invert(17%) sepia(61%) saturate(6917%) hue-rotate(255deg) brightness(87%) contrast(109%);
+    animation: slideleft 1s infinite;
+}
+
+@keyframes slideleft {
+    0% {
+        opacity: 0.2;
+        transform: translateX(-20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+        transform: translateX(0px);
+    }
 }
 
 .welcomeImg {

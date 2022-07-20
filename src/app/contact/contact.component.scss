@@ -4,8 +4,10 @@
 }
 
 #contact {
+    position: relative;
     width: 0px;
-    background: aqua;
+    // width: auto;
+    // background: aqua;
     position: fixed;
     height: calc(100vh - 50px);
     display: flex;
@@ -15,17 +17,36 @@
 }
 
 .contactUnderContainer {
-    // background: aqua;
     height: 700px;
     width: 550px;
-}
-
-.contactUnderContainer {
     z-index: 15;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+}
+
+.backArrow {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    height: 35px;
+    height: 35px;
+    animation: slideright 1s infinite;
+}
+
+@keyframes slideright {
+    0% {
+        opacity: 0.2;
+        transform: translateX(0px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+        transform: translateX(-20px);
+    }
 }
 
 #nameID {

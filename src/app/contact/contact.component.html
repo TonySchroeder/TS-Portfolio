@@ -1,10 +1,11 @@
 <div class="overContainer">
     <div id="overContactContainer" class="widthContainer ">
         <div id="contact">
+            <img class="backArrow" (click)="slideToLeft()" src="assets/img/arrow-left.png" alt="">
             <form class="contactUnderContainer" action="">
                 <input id="nameID" type="text" placeholder="Enter your name">
                 <input id="emailID" type="text" placeholder="Enter your Email address">
-                <textarea onclick="addHight()" name="" id="messageID" rows="1" placeholder="Enter your message"></textarea>
+                <textarea (click)="addHight()" name="" id="messageID" rows="1" placeholder="Enter your message"></textarea>
                 <button class="contactButton">Send</button>
             </form>
         </div>
