@@ -22,6 +22,7 @@ export class ContactComponent implements OnInit {
     document.getElementById('contact').style.width = '0px';
     document.getElementById('skillbgForImgID').style.display = 'none';
     document.getElementById('skillID').style.marginTop = 'calc(90vh - 50px)';
+    document.getElementById('leftBGID').style.transform = 'translateX(0px)';
   }
 
   addHight() {

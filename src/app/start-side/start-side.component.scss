@@ -20,6 +20,7 @@
 }
 
 .welcomeText u {
+    z-index: 5;
     text-decoration: none;
     color: #5221e6;
 }
@@ -102,6 +103,6 @@
 }
 
 .welcomeImg img {
-    z-index: 2;
+    z-index: 5;
     height: 500px;
 }

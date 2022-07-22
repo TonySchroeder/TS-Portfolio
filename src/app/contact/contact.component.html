@@ -2,11 +2,11 @@
     <div id="overContactContainer" class="widthContainer ">
         <div id="contact">
             <img class="backArrow" (click)="slideToLeft()" src="assets/img/arrow-left.png" alt="">
-            <form class="contactUnderContainer" action="">
-                <input id="nameID" type="text" placeholder="Enter your name">
-                <input id="emailID" type="text" placeholder="Enter your Email address">
-                <textarea (click)="addHight()" name="" id="messageID" rows="1" placeholder="Enter your message"></textarea>
-                <button class="contactButton">Send</button>
+            <form class="contactUnderContainer" action="mailto:tony.schroeder@gmx.de" method="post">
+                <input id="nameID" type="text" name="name" placeholder="Enter your name" required>
+                <input id="emailID" type="text" name="mail" placeholder="Enter your Email address" required>
+                <textarea (click)="addHight()" name="" id="messageID" rows="1" placeholder="Enter your message" required></textarea>
+                <button type="submit" value="Submit" class="contactButton">Send</button>
             </form>
         </div>
     </div>

@@ -6,7 +6,7 @@
     color: white;
     background: #5221e6;
     border-top-right-radius: 150px;
-    min-height: 50vh;
+    min-height: 77vh;
 }
 
 .purpleBG {
@@ -14,7 +14,7 @@
 }
 
 .leftBG {
-    min-height: 50vh;
+    min-height: 77vh;
     width: 100%;
     position: absolute;
     top: 0;
@@ -24,9 +24,11 @@
 }
 
 .textFooterContainer {
-    padding-top: 100px;
+    padding-top: 600px;
     display: flex;
     flex-direction: column;
 }
 
-.textFooterContainer span {}
+.textFooterContainer span {
+    padding: 0 50px;
+}

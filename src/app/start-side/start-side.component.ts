@@ -22,6 +22,7 @@ export class StartSideComponent implements OnInit {
     document.getElementById('mainContainer').style.marginLeft = '1600px';
     document.getElementById('contact').style.width = 'auto';
     document.getElementById('skillbgForImgID').style.display = 'flex';
+    document.getElementById('leftBGID').style.transform = 'translateX(-800px)';
   }
 
 
@@ -30,6 +31,8 @@ export class StartSideComponent implements OnInit {
       || document.documentElement.scrollTop
       || document.body.scrollTop || 0;
     this.checkWindowWidth(verticalOffset);
+    this.showOnFooter(verticalOffset)
+    // console.log(verticalOffset);
   }
 
 
@@ -67,11 +70,10 @@ export class StartSideComponent implements OnInit {
   }
 
 
-
   slideTextAndImage(verticalOffset, opacityValue, opacityFix) {
     if (verticalOffset < 450) {
       this.movementOfTextAndImg(verticalOffset, opacityValue);
-    } else if (verticalOffset >= 450) {
+    } else if (verticalOffset >= 450 && verticalOffset < 3503) {
       this.standStillOfTextAndImg(opacityFix);
     }
   }
@@ -146,6 +148,15 @@ export class StartSideComponent implements OnInit {
     } else if (verticalOffset < 250) {
       document.getElementById('arrowRightID').style.display = `block`;
       document.getElementById('underWContact').style.justifyContent = `space-between`;
+    }
+  }
+
+
+  showOnFooter(verticalOffset) {
+    let footerValue = 450 - (verticalOffset - 3503);
+    if (verticalOffset > 3503){
+      document.getElementById('welcomeTextID').style.transform = `translateX(-${footerValue}px)`;
+      document.getElementById('welcomeImgID').style.transform = `translateX(${footerValue}px)`;
     }
   }
 
