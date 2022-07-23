@@ -1,24 +1,10 @@
-<div class="overContainer">
-    <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500" id="footerID" class="widthContainer ">
-        <div class="purpleBG">
-            <div id="leftBGID" class="leftBG"></div>
-
-            <div class="textFooterContainer">
-                <span>Interested in a collaboration?</span>
-                <span>Challenge me. I want to work with you to develop the really cool stuff.</span>
-            </div>
-            <!-- <form class="contactUnderContainer" [formGroup]="checkoutForm" (ngSubmit)="onSubmit()"> -->
-            <form class="contactUnderContainer" (ngSubmit)="onSubmit()">
-
-                <input id="nameID" type="text" [(ngModel)]="name" placeholder="Enter your name" required>
-
-                <input id="emailID" type="text" [(ngModel)]="email" placeholder="Enter your Email address" required>
-
-                <textarea (input)="addHight()" [(ngModel)]="message" id="messageID" rows="1" placeholder="Enter your message" required></textarea>
-
-                <button type="submit" (click)="onSubmit()" class="contactButton">Send</button>
-
-            </form>
+<div id="footerID" class="overContainer">
+    <div class="footerwidth widthContainer ">
+        <span>Impressum - Lrgal Notice</span>
+        <div class="soziallinks">
+            <a href=""> <img src="assets/img/linkedin-box-fill.png" alt=""> </a>
+            <a href=""> <img src="assets/img/github-fill.png" alt=""> </a>
+            <a href=""> <img src="assets/img/xing-fill.png" alt=""> </a>
         </div>
     </div>
 </div>

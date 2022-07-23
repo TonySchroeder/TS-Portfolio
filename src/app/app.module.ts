@@ -10,6 +10,7 @@ import { MyWorkComponent } from './my-work/my-work.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FormsModule } from '@angular/forms';
     MyWorkComponent,
     AboutComponent,
     FooterComponent,
+    ContactMeComponent,
   ],
   imports: [
     BrowserModule,

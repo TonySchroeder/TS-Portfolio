@@ -1,0 +1,24 @@
+<div class="overContainer">
+    <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500" id="contactID" class="widthContainer ">
+        <div class="purpleBG">
+            <div id="leftBGID" class="leftBG"></div>
+
+            <div class="textFooterContainer">
+                <span>Interested in a collaboration?</span>
+                <span>Challenge me. I want to work with you to develop the really cool stuff.</span>
+            </div>
+
+            <form class="contactUnderContainer" (ngSubmit)="onSubmit()">
+
+                <input id="nameID" type="text" [(ngModel)]="name" placeholder="Enter your name" required>
+
+                <input id="emailID" type="text" [(ngModel)]="email" placeholder="Enter your Email address" required>
+
+                <textarea (input)="addHight()" [(ngModel)]="message" id="messageID" rows="1" placeholder="Enter your message" required></textarea>
+
+                <button type="submit" class="contactButton">Send</button>
+
+            </form>
+        </div>
+    </div>
+</div>
