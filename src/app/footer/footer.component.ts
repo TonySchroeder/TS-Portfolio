@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import AOS from 'aos';
 
 
@@ -9,6 +10,9 @@ import AOS from 'aos';
 })
 export class FooterComponent implements OnInit {
 
+  public name = '';
+  public email = '';
+  public message = '';
 
   constructor() { }
 
@@ -23,15 +27,13 @@ export class FooterComponent implements OnInit {
 
 
 onSubmit(){
-let name = document.getElementById('nameID').value;
-let email = document.getElementById('emailID').value;
-let text = document.getElementById('messageID').value;
 
 let message = {
-  'name': name.value,
-  'email': email.value,
-  'text': text.value
+  'name': this.name,
+  'email': this.email,
+  'message': this.message
 }
+console.log(message);
 }
 
 
