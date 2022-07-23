@@ -1,9 +1,4 @@
-#startID {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-}
+#startID {}
 
 .welcome {
     height: calc(90vh - 50px);
@@ -44,6 +39,7 @@
     border-radius: 20px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    text-decoration: none;
 }
 
 #talkID {

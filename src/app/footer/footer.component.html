@@ -7,6 +7,18 @@
                 <span>Interested in a collaboration?</span>
                 <span>Challenge me. I want to work with you to develop the really cool stuff.</span>
             </div>
+            <!-- <form class="contactUnderContainer" [formGroup]="checkoutForm" (ngSubmit)="onSubmit()"> -->
+            <form class="contactUnderContainer" (ngSubmit)="onSubmit()">
+
+                <input id="nameID" type="text" formControlName="name" placeholder="Enter your name" required>
+
+                <input id="emailID" type="text" formControlName="email" placeholder="Enter your Email address" required>
+
+                <textarea (input)="addHight()" formControlName="message" id="messageID" rows="1" placeholder="Enter your message" required></textarea>
+
+                <button type="submit" class="contactButton">Send</button>
+
+            </form>
         </div>
     </div>
 </div>

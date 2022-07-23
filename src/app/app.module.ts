@@ -7,7 +7,6 @@ import { StartSideComponent } from './start-side/start-side.component';
 import { HeaderComponent } from './header/header.component';
 import { SkillsComponent } from './skills/skills.component';
 import { MyWorkComponent } from './my-work/my-work.component';
-import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 
@@ -18,7 +17,6 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     SkillsComponent,
     MyWorkComponent,
-    ContactComponent,
     AboutComponent,
     FooterComponent,
   ],

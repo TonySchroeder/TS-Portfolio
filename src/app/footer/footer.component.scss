@@ -11,6 +11,9 @@
 
 .purpleBG {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .leftBG {
@@ -24,11 +27,85 @@
 }
 
 .textFooterContainer {
-    padding-top: 600px;
+    padding-top: 100px;
     display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+// .textFooterContainer span {
+//     padding: 0 50px;
+// }
+.contactUnderContainer {
+    height: 600px;
+    width: 550px;
+    z-index: 15;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex-direction: column;
 }
 
-.textFooterContainer span {
-    padding: 0 50px;
+#nameID {
+    z-index: 15;
+    width: 400px;
+    font-size: 20px;
+    border: none;
+    background: none;
+    border-bottom: 2px solid white;
+    color: white;
+    background: #5221e6;
+}
+
+#emailID {
+    z-index: 15;
+    width: 400px;
+    font-size: 20px;
+    border: none;
+    background: none;
+    border-bottom: 2px solid white;
+    color: white;
+    background: #5221e6;
+}
+
+#messageID {
+    z-index: 15;
+    width: 400px;
+    font-size: 20px;
+    border: none;
+    background: none;
+    border-bottom: 2px solid white;
+    color: white;
+    resize: none;
+    background: #5221e6;
+}
+
+.contactButton {
+    z-index: 15;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    padding: 8px 8px;
+    background: white;
+    color: #5221e6;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+#nameID:focus {
+    outline: #5221e6;
+    background: #5221e6;
+}
+
+#emailID:focus {
+    outline: #5221e6;
+    background: #5221e6;
+}
+
+#messageID:focus {
+    outline: #5221e6;
+    background: #5221e6;
 }
