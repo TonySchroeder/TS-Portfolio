@@ -11,6 +11,12 @@ import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { ContactMeComponent } from './contact-me/contact-me.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
+import { BgAnimationComponent } from './bg-animation/bg-animation.component';
+import { NgParticlesModule } from "ng-particles";
+
 
 @NgModule({
   declarations: [
@@ -22,11 +28,16 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
     AboutComponent,
     FooterComponent,
     ContactMeComponent,
+    BgAnimationComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    BrowserAnimationsModule,
+    MatMenuModule,
+    MatIconModule,
+    NgParticlesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

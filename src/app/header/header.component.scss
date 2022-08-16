@@ -6,28 +6,32 @@ header {
     justify-content: center;
     background: rgb(31, 31, 31);
     background: linear-gradient(90deg, rgba(31, 31, 31, 1) 25%, rgba(7, 0, 13, 1) 100%);
-}
-
-.headerUnderContainer {
-    max-width: 1000px;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.headerUnderContainer img {
-    height: 30px;
-}
-
-header a {
-    color: white;
-    text-decoration: none;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    .headerUnderContainer {
+        position: relative;
+        max-width: 1000px;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            height: 30px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        .navbar {
+            // display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        .responsiv-menu {
+            position: absolute;
+            top: 50px;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }

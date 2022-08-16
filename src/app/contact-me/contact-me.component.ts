@@ -8,9 +8,9 @@ import AOS from 'aos';
 })
 export class ContactMeComponent implements OnInit {
 
-  public name = '';
-  public email = '';
-  public message = '';
+  public name: string = '';
+  public email: string = '';
+  public message: string = '';
 
   constructor() { }
 
@@ -25,15 +25,15 @@ export class ContactMeComponent implements OnInit {
   }
 
 
-onSubmit(){
+  onSubmit() {
 
-let message = {
-  'name': this.name,
-  'email': this.email,
-  'message': this.message
-}
-console.log(message);
-}
+    let message = {
+      'name': this.name,
+      'email': this.email,
+      'message': this.message
+    }
+    console.log(message);
+  }
 
 
 }
