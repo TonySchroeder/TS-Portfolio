@@ -5,8 +5,9 @@ header {
     display: flex;
     justify-content: center;
     transition: 255ms;
-    // background: rgba(31, 31, 31, 0.95);
-    // background: linear-gradient(90deg, rgba(31, 31, 31, 0.95) 25%, rgba(7, 0, 13, 0.95) 100%);
+    @media screen and (max-width: 1032px) {
+        padding: 0 16px;
+    }
     .headerUnderContainer {
         position: relative;
         max-width: 1000px;
@@ -23,17 +24,28 @@ header {
             text-decoration: none;
         }
         .navbar {
-            // display: flex;
+            display: flex;
             justify-content: space-between;
             gap: 30px;
+            @media screen and (max-width: 650px) {
+                display: none;
+            }
         }
         .responsiv-button {
-            padding: 16px;
+            display: none;
+            @media screen and (max-width: 650px) {
+                display: block;
+            }
             button {
                 background: transparent;
                 color: white;
                 border: none;
                 cursor: pointer;
+                transition: 155ms;
+                &:hover {
+                    transform: scale(1.15);
+                    transition: 155ms;
+                }
             }
             .responsiv-menu {
                 position: absolute;
@@ -43,15 +55,32 @@ header {
                 flex-direction: column;
                 gap: 16px;
                 background: rgba(31, 31, 31, 0.99);
-                transition: 255ms;
+                transition: 155ms;
                 padding: 16px;
-                button {}
+                transform: rotateY(90deg);
+                animation: rotate-vert-left 0.255s ease 0s 1 normal both;
+                // button {
+                // }
             }
         }
     }
-    .bg-tarnsparent {
-        background: rgba(31, 31, 31, 0.99);
-        background: linear-gradient(90deg, rgba(31, 31, 31, 0.99) 25%, rgba(7, 0, 13, 0.99) 100%);
-        transition: 255ms;
+}
+
+.bg-tarnsparent {
+    background: rgba(31, 31, 31, 0.99);
+    background: linear-gradient(90deg, rgba(31, 31, 31, 0.99) 25%, rgba(7, 0, 13, 0.99) 100%);
+    transition: 255ms;
+}
+
+@keyframes rotate-vert-left {
+    0% {
+        transform: rotateY(90deg);
+        transform-origin: right;
+        opacity: 0;
+    }
+    100% {
+        transform: rotateY(0deg);
+        transform-origin: right;
+        opacity: 1;
     }
 }

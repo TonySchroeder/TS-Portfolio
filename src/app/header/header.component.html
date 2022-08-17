@@ -1,4 +1,4 @@
-<header [class.bg-tarnsparent]="headerVisibility">
+<header [class.bg-tarnsparent]="headerVisibility == true">
 
     <div class="headerUnderContainer">
 
@@ -6,7 +6,7 @@
             <img src="assets/img/logo.png" alt="">
         </a>
 
-        <div class="navbar d-none">
+        <div class="navbar">
 
             <a href="#startID">Start</a>
             <a href="#skillID">Skills</a>
@@ -16,12 +16,12 @@
 
         </div>
 
-        <div class="responsiv-button ">
+        <div class="responsiv-button">
 
-            <button class="cursor_pointer">
+            <button (click)="openingMenu()">
               <mat-icon  aria-hidden="false" aria-label="" fontIcon="menu"></mat-icon>
             </button>
-            <div class="responsiv-menu">
+            <div *ngIf="openMenu" class="responsiv-menu">
                 <button mat-menu-item><a href="#startID">Start</a></button>
                 <button mat-menu-item><a href="#skillID">Skills</a></button>
                 <button mat-menu-item><a href="#myWorkID">Portfolio</a></button>
