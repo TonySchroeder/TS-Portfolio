@@ -1,4 +1,4 @@
-<header>
+<header [class.bg-tarnsparent]="headerVisibility">
 
     <div class="headerUnderContainer">
 
@@ -16,10 +16,10 @@
 
         </div>
 
-        <div>
+        <div class="responsiv-button ">
 
-            <button>
-              <mat-icon aria-hidden="false" aria-label="" fontIcon="menu"></mat-icon>
+            <button class="cursor_pointer">
+              <mat-icon  aria-hidden="false" aria-label="" fontIcon="menu"></mat-icon>
             </button>
             <div class="responsiv-menu">
                 <button mat-menu-item><a href="#startID">Start</a></button>

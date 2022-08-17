@@ -19,10 +19,31 @@ export class MyWorkComponent implements OnInit {
 
   ngOnInit(): void {
     AOS.init();
-    VanillaTilt.init(document.querySelector('.vanillaTilt1') as any);
-    VanillaTilt.init(document.querySelector('.vanillaTilt2') as any);
-    VanillaTilt.init(document.querySelector('.vanillaTilt3') as any);
-    VanillaTilt.init(document.querySelector('.vanillaTilt4') as any);
+    VanillaTilt.init(document.querySelector('.vanillaTilt1') as any, {
+      reverse: true,
+      scale: 1.1,
+      speed: 400,
+      perspective: 1000,
+
+    });
+    VanillaTilt.init(document.querySelector('.vanillaTilt2') as any, {
+      reverse: true,
+      scale: 1.1,
+      speed: 400,
+      perspective: 1000,
+    });
+    VanillaTilt.init(document.querySelector('.vanillaTilt3') as any, {
+      reverse: true,
+      scale: 1.1,
+      speed: 400,
+      perspective: 1000,
+    });
+    VanillaTilt.init(document.querySelector('.vanillaTilt4') as any, {
+      reverse: true,
+      scale: 1.1,
+      speed: 400,
+      perspective: 1000,
+    });
   }
 
 }

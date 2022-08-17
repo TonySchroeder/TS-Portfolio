@@ -1,30 +1,45 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit, } from '@angular/core';
+import { InitFunktionsService } from '../init-funktions.service';
 // import { MoveDirection, ClickMode, HoverMode, OutMode, Container, Engine } from "tsparticles-engine";
 // import { loadFull } from "tsparticles";
 
 @Component({
   selector: 'app-bg-animation',
   templateUrl: './bg-animation.component.html',
-  styleUrls: ['./bg-animation.component.scss']
+  styleUrls: ['./bg-animation.component.scss'],
+  host: {
+    '(document:mousemove)': 'onMouseMove($event)'
+  }
 })
 export class BgAnimationComponent implements OnInit {
 
-// container:any = document.querySelector('.container');
-// bg:any = document.querySelector('.bg');
-mouseX:any;
-mouseY:any;
+  // container:any = document.querySelector('.container');
+  // bg:any = document.querySelector('.bg');
+  mouseX: any;
+  mouseY: any;
 
-  constructor() { }
+  constructor(public init: InitFunktionsService) { }
 
   ngOnInit(): void {
 
   }
-  @HostListener('mousemove', ['$event'])
-  handleMousemove(event) {
-    this.mouseX = event.clientX
-    this.mouseY = event.clientY
-    console.log(`x: ${event.clientX}, y: ${event.clientY}`);
+
+
+  onMouseMove(e:any) {
+    // this.mouseX = e.clientX;
+    this.mouseX = e.pageX;
+    // this.mouseY = e.clientY;
+    this.mouseY = e.pageY;
+    // console.log(e);
   }
+
+
+  // @HostListener('mousemove', ['$event'])
+  // onMouseMove(event: any) {
+  //   this.mouseX = event.clientX
+  //   this.mouseY = event.clientY
+  //   console.log(`x: ${event.clientX}, y: ${event.clientY}`);
+  // }
 
   // id = "tsparticles";
 
