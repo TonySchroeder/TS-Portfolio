@@ -2,12 +2,22 @@
     height: 200px;
     background: white;
     z-index: 2;
+    @media screen and (max-width: 550px) {
+        height: 150px;
+    }
 }
 
 .footerwidth {
     display: flex;
+    gap: 20px;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 1032px) {
+        padding: 16px 16px;
+    }
+    @media screen and (max-width: 550px) {
+        flex-direction: column-reverse;
+    }
 }
 
 .soziallinks {

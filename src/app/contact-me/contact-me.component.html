@@ -8,15 +8,15 @@
                 <span>Challenge me. I want to work with you to develop the really cool stuff.</span>
             </div>
 
-            <form class="contactUnderContainer">
+            <form action="http://tony-schroeder.developerakademie.net/Portfolio/send_mail.php" class="contactUnderContainer" method="POST">
 
-                <input id="nameID" type="text" placeholder="Enter your name" required>
+                <input id="nameID" type="text" name="name" placeholder="Enter your name" required>
 
-                <input id="emailID" type="text" placeholder="Enter your Email address" required>
+                <input id="emailID" type="text" name="message" placeholder="Enter your Email address" required>
 
-                <textarea (focus)="addHight()" id="messageID" rows="1" placeholder="Enter your message" required></textarea>
+                <textarea (focus)="addHight()" id="messageID" name="message" rows="1" placeholder="Enter your message" required></textarea>
 
-                <button class="contactButton">Send</button>
+                <button type="submit" class="contactButton">Send</button>
 
             </form>
         </div>

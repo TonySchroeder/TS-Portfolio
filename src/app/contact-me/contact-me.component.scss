@@ -7,6 +7,14 @@
     background: #5221e6;
     border-top-right-radius: 150px;
     height: 800px;
+    @media screen and (max-width: 1032px) {
+        padding: 0 16px;
+        border-top-right-radius: 100px;
+    }
+    @media screen and (max-width: 400px) {
+        height: 900px;
+        border-top-right-radius: 50px;
+    }
 }
 
 .purpleBG {
@@ -24,6 +32,9 @@
     left: -2000px;
     width: 2000px;
     background: #5221e6;
+    @media screen and (max-width: 400px) {
+        height: 900px;
+    }
 }
 
 .textFooterContainer {
@@ -33,12 +44,10 @@
     font-size: 20px;
 }
 
-// .textFooterContainer span {
-//     padding: 0 50px;
-// }
 .contactUnderContainer {
     height: 600px;
-    width: 550px;
+    max-width: 550px;
+    width: 100%;
     z-index: 15;
     display: flex;
     justify-content: space-around;
@@ -48,7 +57,8 @@
 
 #nameID {
     z-index: 15;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     font-size: 20px;
     border: none;
     background: none;
@@ -59,7 +69,8 @@
 
 #emailID {
     z-index: 15;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     font-size: 20px;
     border: none;
     background: none;
@@ -70,7 +81,8 @@
 
 #messageID {
     z-index: 15;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     font-size: 20px;
     border: none;
     background: none;
@@ -82,11 +94,12 @@
 
 .contactButton {
     z-index: 15;
+    max-width: 350px;
+    width: 100%;
     font-size: 20px;
     font-weight: bold;
     display: flex;
     justify-content: center;
-    width: 350px;
     padding: 8px 8px;
     background: white;
     color: #5221e6;

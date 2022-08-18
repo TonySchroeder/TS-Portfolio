@@ -22,11 +22,11 @@
               <mat-icon  aria-hidden="false" aria-label="" fontIcon="menu"></mat-icon>
             </button>
             <div *ngIf="openMenu" class="responsiv-menu">
-                <button mat-menu-item><a href="#startID">Start</a></button>
-                <button mat-menu-item><a href="#skillID">Skills</a></button>
-                <button mat-menu-item><a href="#myWorkID">Portfolio</a></button>
-                <button mat-menu-item><a href="#aboutMe">About</a></button>
-                <button mat-menu-item><a href="#footerID">Contact</a></button>
+                <button (click)="openingMenu()" mat-menu-item><a href="#startID">Start</a></button>
+                <button (click)="openingMenu()" mat-menu-item><a href="#skillID">Skills</a></button>
+                <button (click)="openingMenu()" mat-menu-item><a href="#myWorkID">Portfolio</a></button>
+                <button (click)="openingMenu()" mat-menu-item><a href="#aboutMe">About</a></button>
+                <button (click)="openingMenu()" mat-menu-item><a href="#footerID">Contact</a></button>
             </div>
 
         </div>

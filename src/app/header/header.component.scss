@@ -18,6 +18,11 @@ header {
         align-items: center;
         img {
             height: 30px;
+            transition: 155ms;
+            &:hover {
+                transform: scale(1.15);
+                transition: 155ms;
+            }
         }
         a {
             color: white;
@@ -54,7 +59,7 @@ header {
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
-                background: rgba(31, 31, 31, 0.99);
+                background: rgba(31, 31, 31, 0.98);
                 transition: 155ms;
                 padding: 16px;
                 transform: rotateY(90deg);
@@ -67,8 +72,8 @@ header {
 }
 
 .bg-tarnsparent {
-    background: rgba(31, 31, 31, 0.99);
-    background: linear-gradient(90deg, rgba(31, 31, 31, 0.99) 25%, rgba(7, 0, 13, 0.99) 100%);
+    background: rgba(31, 31, 31, 0.98);
+    background: linear-gradient(90deg, rgba(31, 31, 31, 0.98) 25%, rgba(7, 0, 13, 0.98) 100%);
     transition: 255ms;
 }
 
