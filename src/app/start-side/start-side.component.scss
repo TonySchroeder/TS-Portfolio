@@ -51,6 +51,11 @@
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     text-decoration: none;
+    &:hover {
+      #talkID{
+        transform: translateX(10px);
+      }
+    }
     @media screen and (max-width: 650px) {
         width: 240px;
     }

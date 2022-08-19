@@ -4,11 +4,17 @@ import AOS from 'aos';
 @Component({
   selector: 'app-about-me',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  styleUrls: ['./about.component.scss'],
+  host: {
+    '(document:mousemove)': 'onMouseMove($event)'
+  }
 })
 export class AboutComponent implements OnInit {
 
+  mouseX: any;
+  mouseY: any;
 
+cursor:any = document.querySelector('cursor');
 
   constructor() { }
 
@@ -17,5 +23,9 @@ export class AboutComponent implements OnInit {
   }
 
 
+  onMouseMove(e: any) {
+    this.mouseX = e.pageX;
+    this.mouseY = e.pageY;
+   }
 
 }

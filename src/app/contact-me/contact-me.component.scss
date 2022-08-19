@@ -1,152 +1,157 @@
 #contactID {
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    background: #5221e6;
-    border-top-right-radius: 150px;
-    height: 800px;
-    @media screen and (max-width: 1032px) {
-        padding: 0 16px;
-        border-top-right-radius: 100px;
-    }
-    @media screen and (max-width: 400px) {
-        height: 900px;
-        border-top-right-radius: 50px;
-    }
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background: #5221e6;
+  border-top-right-radius: 150px;
+  height: 800px;
+
+  @media screen and (max-width: 1032px) {
+    padding: 0 16px;
+    border-top-right-radius: 100px;
+  }
+
+  @media screen and (max-width: 400px) {
+    height: 900px;
+    border-top-right-radius: 50px;
+  }
 }
 
 .purpleBG {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .leftBG {
-    height: 800px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: -2000px;
-    width: 2000px;
-    background: #5221e6;
-    @media screen and (max-width: 400px) {
-        height: 900px;
-    }
+  height: 800px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -2000px;
+  width: 2000px;
+  background: #5221e6;
+
+  @media screen and (max-width: 400px) {
+    height: 900px;
+  }
 }
 
 .textFooterContainer {
-    padding-top: 100px;
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    a{
-      color: white;
-      text-decoration: none;
-    }
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 .contactUnderContainer {
   position: relative;
-    height: 600px;
-    max-width: 550px;
-    width: 100%;
-    z-index: 15;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
+  height: 600px;
+  max-width: 550px;
+  width: 100%;
+  z-index: 15;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
 
 #name {
-    z-index: 15;
-    max-width: 400px;
-    width: 100%;
-    font-size: 20px;
-    border: none;
-    background: none;
-    border-bottom: 2px solid white;
-    color: white;
-    background: #5221e6;
+  z-index: 15;
+  max-width: 400px;
+  width: 100%;
+  font-size: 20px;
+  border: none;
+  background: none;
+  border-bottom: 2px solid white;
+  color: white;
+  background: #5221e6;
 }
 
 #email {
-    z-index: 15;
-    max-width: 400px;
-    width: 100%;
-    font-size: 20px;
-    border: none;
-    background: none;
-    border-bottom: 2px solid white;
-    color: white;
-    background: #5221e6;
+  z-index: 15;
+  max-width: 400px;
+  width: 100%;
+  font-size: 20px;
+  border: none;
+  background: none;
+  border-bottom: 2px solid white;
+  color: white;
+  background: #5221e6;
 }
 
 #message {
-    z-index: 15;
-    max-width: 400px;
-    width: 100%;
-    font-size: 20px;
-    border: none;
-    background: none;
-    border-bottom: 2px solid white;
-    color: white;
-    resize: none;
-    background: #5221e6;
+  z-index: 15;
+  max-width: 400px;
+  width: 100%;
+  font-size: 20px;
+  border: none;
+  background: none;
+  border-bottom: 2px solid white;
+  color: white;
+  resize: none;
+  background: #5221e6;
 }
 
 .contactButton {
-    z-index: 15;
-    max-width: 350px;
-    width: 100%;
-    font-size: 20px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    padding: 8px 8px;
-    background: white;
-    color: #5221e6;
-    border: 2px solid white;
-    border-radius: 20px;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  z-index: 15;
+  max-width: 350px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  padding: 8px 8px;
+  background: white;
+  color: #5221e6;
+  border: 2px solid white;
+  border-radius: 20px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
 
 #name:focus {
-    outline: #5221e6;
-    background: #5221e6;
+  outline: #5221e6;
+  background: #5221e6;
 
 }
 
 #email:focus {
-    outline: #5221e6;
-    background: #5221e6;
+  outline: #5221e6;
+  background: #5221e6;
 }
 
 #message:focus {
-    outline: #5221e6;
-    background: #5221e6;
+  outline: #5221e6;
+  background: #5221e6;
 }
 
-.reportBox{
+.reportBox {
   z-index: 20;
-position: absolute;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-background: #5221e6;
-height: 250px;
-width: 250px;
-border-radius: 12px;
-border: 2px solid white;
-padding: 16px;
-box-sizing: border-box;
-button{
-  max-width: 150px;
-  width: 100%;
+  position: absolute;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #5221e6;
+  height: 250px;
+  width: 250px;
+  border-radius: 12px;
+  border: 2px solid white;
+  padding: 16px;
+  box-sizing: border-box;
+
+  button {
+    max-width: 150px;
+    width: 100%;
+    display: flex;
     justify-content: center;
     font-weight: bold;
     padding: 8px 8px;
@@ -155,5 +160,10 @@ button{
     border: 2px solid white;
     border-radius: 20px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  }
 }
+
+.biggerInput{
+  transition: all 0.255s ease;
+  height: 200px;
 }

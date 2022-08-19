@@ -13,12 +13,14 @@ export class ContactMeComponent implements OnInit {
   name: string = '';
   email: string = '';
   message: string = '';
-
-  endpoint = "http://@tony-schroeder.developerakademie.net/send_mail.php";
+  biggerInput: boolean = false;
+  endpoint = "https://@tony-schroeder.developerakademie.net/Portfolio/assets/send_mail.php";
   submitReport = '';
   submitComplete = false;
 
+
   constructor(private http: HttpClient) { }
+
 
   ngOnInit(): void {
     AOS.init();
@@ -26,8 +28,7 @@ export class ContactMeComponent implements OnInit {
 
 
   addHight() {
-    document.getElementById('message').style.transition = 'all 0.255s ease';
-    document.getElementById('message').style.height = '200px';
+    this.biggerInput = true;
   }
 
 
@@ -37,9 +38,9 @@ export class ContactMeComponent implements OnInit {
     }
   }
 
+
   sendForm(form: any) {
     console.log(form);
-
     this
       .http
       .post(this.endpoint, form.value)
@@ -49,12 +50,14 @@ export class ContactMeComponent implements OnInit {
       );
   }
 
+
   handleResponse(response: any, form: any) {
     console.log(response);
     this.submitReport = "Thank up for your Contact. I will replay as soon as possible!";
     this.submitComplete = true;
     form.reset();
   }
+
 
   handleError(error: any, form: any) {
     console.log(error);
@@ -67,7 +70,6 @@ export class ContactMeComponent implements OnInit {
   closeCard() {
     this.submitComplete = false;
     this.submitReport = '';
+    this.biggerInput = false;
   }
-
-
 }

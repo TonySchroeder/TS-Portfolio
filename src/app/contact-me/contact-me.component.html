@@ -15,7 +15,7 @@
 
                 <input id="email" type="email" name="email" ngModel #email="ngModel" placeholder="Enter your Email address" required>
 
-                <textarea (focus)="addHight()"  id="message" name="message" ngModel rows="1" placeholder="Enter your message" required></textarea>
+                <textarea (focus)="addHight()" [class.biggerInput]="biggerInput"  id="message" name="message" ngModel rows="1" placeholder="Enter your message" required></textarea>
 
                 <button [disabled]="!myForm.valid" class="contactButton" >Send</button>
 
