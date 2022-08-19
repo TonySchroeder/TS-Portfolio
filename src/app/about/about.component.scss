@@ -61,23 +61,9 @@
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(165deg) brightness(108%) contrast(100%);
 }
 
-.cursor{
-  z-index: 25;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #fff;
-  // transition: 100ms;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-}
 
-i:hover ~ .cursor{
 
-      background: aqua;
 
-  }
+
+
 

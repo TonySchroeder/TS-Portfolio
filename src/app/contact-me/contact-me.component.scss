@@ -115,6 +115,12 @@
   border: 2px solid white;
   border-radius: 20px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 155ms;
+  &:hover {
+    transform: scale(1.1);
+    transition: 155ms;
+  }
 }
 
 #name:focus {
@@ -163,7 +169,7 @@
   }
 }
 
-.biggerInput{
+.biggerInput {
   transition: all 0.255s ease;
   height: 200px;
 }
