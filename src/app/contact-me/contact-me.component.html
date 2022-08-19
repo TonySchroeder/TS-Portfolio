@@ -6,17 +6,23 @@
             <div class="textFooterContainer">
                 <span>Interested in a collaboration?</span>
                 <span>Challenge me. I want to work with you to develop the really cool stuff.</span>
+
             </div>
 
-            <form action="http://tony-schroeder.developerakademie.net/Portfolio/send_mail.php" class="contactUnderContainer" method="POST">
+            <form  #myForm="ngForm" (ngSubmit)="onSubmit(myForm)" ngNativeValidate novalidate  class="contactUnderContainer">
 
-                <input id="nameID" type="text" name="name" placeholder="Enter your name" required>
+                <input id="name" name="name" ngModel #name="ngModel" placeholder="Enter your name" required>
 
-                <input id="emailID" type="text" name="message" placeholder="Enter your Email address" required>
+                <input id="email" type="email" name="email" ngModel #email="ngModel" placeholder="Enter your Email address" required>
 
-                <textarea (focus)="addHight()" id="messageID" name="message" rows="1" placeholder="Enter your message" required></textarea>
+                <textarea (focus)="addHight()"  id="message" name="message" ngModel rows="1" placeholder="Enter your message" required></textarea>
 
-                <button type="submit" class="contactButton">Send</button>
+                <button [disabled]="!myForm.valid" class="contactButton" >Send</button>
+
+                <div *ngIf="submitComplete" class="reportBox">
+                  <p>{{ submitReport }}</p>
+                  <button (click)="closeCard()">OK</button>
+                </div>
 
             </form>
 

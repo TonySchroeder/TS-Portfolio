@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
     const verticalOffset = window.pageYOffset
       || document.documentElement.scrollTop
       || document.body.scrollTop || 0;
-    if (verticalOffset > 100) {
+    if (verticalOffset > 50) {
       this.headerVisibility = true;
     } else {
       this.headerVisibility = false;

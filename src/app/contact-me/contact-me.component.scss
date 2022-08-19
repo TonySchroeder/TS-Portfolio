@@ -42,9 +42,14 @@
     display: flex;
     flex-direction: column;
     font-size: 20px;
+    a{
+      color: white;
+      text-decoration: none;
+    }
 }
 
 .contactUnderContainer {
+  position: relative;
     height: 600px;
     max-width: 550px;
     width: 100%;
@@ -55,7 +60,7 @@
     flex-direction: column;
 }
 
-#nameID {
+#name {
     z-index: 15;
     max-width: 400px;
     width: 100%;
@@ -67,7 +72,7 @@
     background: #5221e6;
 }
 
-#emailID {
+#email {
     z-index: 15;
     max-width: 400px;
     width: 100%;
@@ -79,7 +84,7 @@
     background: #5221e6;
 }
 
-#messageID {
+#message {
     z-index: 15;
     max-width: 400px;
     width: 100%;
@@ -108,17 +113,47 @@
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
 
-#nameID:focus {
+#name:focus {
+    outline: #5221e6;
+    background: #5221e6;
+
+}
+
+#email:focus {
     outline: #5221e6;
     background: #5221e6;
 }
 
-#emailID:focus {
+#message:focus {
     outline: #5221e6;
     background: #5221e6;
 }
 
-#messageID:focus {
-    outline: #5221e6;
-    background: #5221e6;
+.reportBox{
+  z-index: 20;
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background: #5221e6;
+height: 250px;
+width: 250px;
+border-radius: 12px;
+border: 2px solid white;
+padding: 16px;
+box-sizing: border-box;
+button{
+  max-width: 150px;
+  width: 100%;
+  display: flex;
+    justify-content: center;
+    font-weight: bold;
+    padding: 8px 8px;
+    background: white;
+    color: #5221e6;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
 }

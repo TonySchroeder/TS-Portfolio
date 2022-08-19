@@ -16,6 +16,9 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { BgAnimationComponent } from './bg-animation/bg-animation.component';
 import { NgParticlesModule } from "ng-particles";
+import { ImprintComponent } from './imprint/imprint.component';
+import { FolioScreenComponent } from './folio-screen/folio-screen.component';
+import { DataProtectionComponent } from './data-protection/data-protection.component';
 
 
 @NgModule({
@@ -29,6 +32,9 @@ import { NgParticlesModule } from "ng-particles";
     FooterComponent,
     ContactMeComponent,
     BgAnimationComponent,
+      ImprintComponent,
+      FolioScreenComponent,
+      DataProtectionComponent,
   ],
   imports: [
     BrowserModule,

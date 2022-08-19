@@ -13,19 +13,21 @@ export class BgAnimationComponent implements OnInit {
 
   mouseX: any;
   mouseY: any;
-  windowWidth
-  showlight: boolean = true;
+  windowWidth: number = 833;
+  showLight: boolean = true;
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit(): void {
-
   }
 
 
   @HostListener('window:resize', ['$event'])
-  onResize(event) {
+  onResize(event: any) {
     this.windowWidth = event.target.innerWidth
+
   }
 
 
@@ -33,13 +35,13 @@ export class BgAnimationComponent implements OnInit {
     this.mouseX = e.pageX;
     this.mouseY = e.pageY;
     if (this.mouseY > 5000 && this.windowWidth >= 833) {
-      this.showlight = false;
-    } else if (this.mouseY > 5750 && this.windowWidth <= 832) {
-      this.showlight = false;
+      this.showLight = false;
+    } else if (this.mouseY > 5650 && this.windowWidth <= 832) {
+      this.showLight = false;
     } else {
-      this.showlight = true;
+      this.showLight = true;
     }
-  }
+   }
 
 }
 
