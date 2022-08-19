@@ -14,7 +14,7 @@ export class ContactMeComponent implements OnInit {
   email: string = '';
   message: string = '';
 
-  endpoint = "http://tony-schroeder.developerakademie.net/Portfolio/send_mail.php";
+  endpoint = "http://@tony-schroeder.developerakademie.net/send_mail.php";
   submitReport = '';
   submitComplete = false;
 
