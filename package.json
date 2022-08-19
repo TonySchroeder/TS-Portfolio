@@ -22,11 +22,11 @@
     "@angular/router": "^14.1.2",
     "angular-particle-updated": "^1.0.4-1",
     "aos": "^2.3.4",
-    "ng-particles": "^3.2.1",
+    "ng-particles": "^3.2.2",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "tsparticles": "^2.2.1",
-    "tsparticles-engine": "^2.2.1",
+    "tsparticles-engine": "^2.2.2",
     "vanilla-tilt": "^1.7.2",
     "zone.js": "~0.11.4"
   },

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import AOS from 'aos';
 
 
@@ -10,11 +9,14 @@ import AOS from 'aos';
 })
 export class FooterComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit(): void {
     AOS.init();
+
   }
+
 
 
 }

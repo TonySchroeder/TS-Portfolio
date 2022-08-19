@@ -1,7 +1,5 @@
 import { Component, HostListener, OnInit, } from '@angular/core';
-import { InitFunktionsService } from '../init-funktions.service';
-// import { MoveDirection, ClickMode, HoverMode, OutMode, Container, Engine } from "tsparticles-engine";
-// import { loadFull } from "tsparticles";
+;
 
 @Component({
   selector: 'app-bg-animation',
@@ -15,17 +13,32 @@ export class BgAnimationComponent implements OnInit {
 
   mouseX: any;
   mouseY: any;
+  windowWidth
+  showlight: boolean = true;
 
-  constructor(public init: InitFunktionsService) { }
+  constructor() { }
 
   ngOnInit(): void {
 
   }
 
 
-  onMouseMove(e:any) {
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.windowWidth = event.target.innerWidth
+  }
+
+
+  onMouseMove(e: any) {
     this.mouseX = e.pageX;
     this.mouseY = e.pageY;
+    if (this.mouseY > 5000 && this.windowWidth >= 833) {
+      this.showlight = false;
+    } else if (this.mouseY > 5750 && this.windowWidth <= 832) {
+      this.showlight = false;
+    } else {
+      this.showlight = true;
+    }
   }
 
 }
