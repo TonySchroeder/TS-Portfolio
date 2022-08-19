@@ -19,6 +19,7 @@ import { NgParticlesModule } from "ng-particles";
 import { ImprintComponent } from './imprint/imprint.component';
 import { FolioScreenComponent } from './folio-screen/folio-screen.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { DataProtectionComponent } from './data-protection/data-protection.compo
     MatMenuModule,
     MatIconModule,
     NgParticlesModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

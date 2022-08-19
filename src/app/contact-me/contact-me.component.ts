@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import AOS from 'aos';
@@ -17,7 +18,7 @@ export class ContactMeComponent implements OnInit {
   submitReport = '';
   submitComplete = false;
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
     AOS.init();
@@ -39,13 +40,13 @@ export class ContactMeComponent implements OnInit {
   sendForm(form: any) {
     console.log(form);
 
-    // this
-    //   .http
-    //   .post(this.endpoint, form.value)
-    //   .subscribe(
-    //     response => this.handleResponse(response, form),
-    //     error => this.handleError(error, form)
-    //   );
+    this
+      .http
+      .post(this.endpoint, form.value)
+      .subscribe(
+        response => this.handleResponse(response, form),
+        error => this.handleError(error, form)
+      );
   }
 
   handleResponse(response: any, form: any) {
