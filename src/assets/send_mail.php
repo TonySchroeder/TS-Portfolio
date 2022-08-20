@@ -19,7 +19,8 @@ switch($_SERVER['REQUEST_METHOD']){
 
         $recipient = 'tony.schroeder@gmx.de';
         $subject = "Contact From $name <$email>";
-        $headers = "From:  noreply@developerakademie.com";
+        // $headers = "From:  noreply@developerakademie.com";
+        $headers = "From:  noreply@tony-schroeder.de";
 
         mail($recipient, $subject, $message, $headers);
         break;

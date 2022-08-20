@@ -1,6 +1,6 @@
 // #startID {}
 .welcome {
-    min-height: calc(90vh - 50px);
+    min-height: calc(100vh - 50px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,6 +9,7 @@
         justify-content: center;
         gap: 30px;
     }
+
 }
 
 .welcomeText {
