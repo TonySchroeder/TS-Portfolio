@@ -1,15 +1,15 @@
-<div id="contactMe" class="overContainer">
+<div class="overContainer">
     <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500" data-aos-duration="1500" id="contactID" class="widthContainer ">
         <div class="purpleBG">
             <div id="leftBGID" class="leftBG"></div>
 
             <div class="textFooterContainer">
                 <span>Interested in a collaboration?</span>
-                <span>Challenge me. I want to work with you to develop the really cool stuff.</span>
+                <span id="contactMe" >Challenge me. I want to work with you to develop the really cool stuff.</span>
 
             </div>
 
-            <form  #myForm="ngForm" (ngSubmit)="onSubmit(myForm)" ngNativeValidate novalidate  class="contactUnderContainer">
+            <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)" ngNativeValidate novalidate  class="contactUnderContainer">
 
                 <input id="name" name="name" ngModel #name="ngModel" placeholder="Enter your name" required>
 

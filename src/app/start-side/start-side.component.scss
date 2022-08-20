@@ -1,4 +1,4 @@
-// #startID {}
+
 .welcome {
     min-height: calc(100vh - 50px);
     display: flex;
@@ -99,7 +99,8 @@
 }
 
 .welcomeImg {
-    position: relative;
+
+  position: relative;
     height: 500px;
     width: 500px;
     display: flex;
@@ -110,6 +111,9 @@
     @media screen and (max-width: 650px) {
         height: 250px;
         width: 250px;
+    }
+    @media screen and (max-width: 1100px) {
+    margin-top: 50px;
     }
 }
 
