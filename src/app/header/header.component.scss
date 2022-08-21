@@ -2,8 +2,10 @@ header {
     z-index: 99;
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     display: flex;
-    width: 100%;
+    width: 100vw;
     box-sizing: border-box;
     justify-content: center;
     transition: 255ms;
@@ -39,6 +41,9 @@ header {
             display: flex;
             justify-content: space-between;
             gap: 30px;
+            @media screen and (max-width: 1032px) {
+             padding: 0 16px;
+          }
             @media screen and (max-width: 650px) {
                 display: none;
             }
@@ -62,16 +67,15 @@ header {
             .responsiv-menu {
                 position: absolute;
                 top: 50px;
-                right: 0;
+                right: -16px;
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
                 background: rgba(31, 31, 31, 0.98);
                 transition: 155ms;
                 padding: 16px;
-                // transform: rotateY(90deg);
-                // animation: rotate-vert-left 0.255s ease 0s 1 normal both;
-
+                transform: rotateY(90deg);
+                animation: rotate-vert-left 0.255s ease 0s 1 normal both;
             }
         }
     }
