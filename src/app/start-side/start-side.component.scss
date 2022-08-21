@@ -1,139 +1,153 @@
-
 .welcome {
-    min-height: calc(100vh - 50px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    @media screen and (max-width: 1100px) {
-        flex-direction: column-reverse;
-        justify-content: center;
-        gap: 30px;
-    }
+  min-height: calc(100vh - 50px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 1100px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 30px;
+  }
 
 }
 
 .welcomeText {
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    font-size: 48px;
-    color: white;
-    @media screen and (max-width: 1100px) {
-        text-align: center;
-    }
-    @media screen and (max-width: 650px) {
-        font-size: 32px;
-    }
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 48px;
+  color: white;
+
+  @media screen and (max-width: 1100px) {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 1032px) {
+    padding: 0 16px;
+  }
+
+  @media screen and (max-width: 650px) {
+    font-size: 32px;
+  }
 }
 
 .welcomeText u {
-    z-index: 5;
-    text-decoration: none;
-    color: #5221e6;
+  z-index: 5;
+  text-decoration: none;
+  color: #5221e6;
 }
 
 .welcomeContact {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    white-space: nowrap;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
 }
 
 #underWContact {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 350px;
-    padding: 8px 8px;
-    background: white;
-    color: #5221e6;
-    border: 2px solid white;
-    border-radius: 20px;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    text-decoration: none;
-    &:hover {
-      #talkID{
-        transform: translateX(10px);
-      }
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  padding: 8px 8px;
+  background: white;
+  color: #5221e6;
+  border: 2px solid white;
+  border-radius: 20px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    #talkID {
+      transform: translateX(10px);
     }
-    @media screen and (max-width: 650px) {
-        width: 240px;
-    }
+  }
+
+  @media screen and (max-width: 650px) {
+    width: 230px;
+  }
 }
 
 #talkID {
-    text-decoration: none;
-    font-size: 28px;
-    transition: all 0.5s ease;
+  text-decoration: none;
+  font-size: 28px;
+  transition: all 0.5s ease;
 }
 
 #mailID {
-    transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 #mailID img {
-    filter: invert(17%) sepia(61%) saturate(6917%) hue-rotate(255deg) brightness(87%) contrast(109%);
+  filter: invert(17%) sepia(61%) saturate(6917%) hue-rotate(255deg) brightness(87%) contrast(109%);
 }
 
 .rightArrow {
-    position: absolute;
-    right: 10px;
-    height: 35px;
-    filter: invert(17%) sepia(61%) saturate(6917%) hue-rotate(255deg) brightness(87%) contrast(109%);
-    animation: slideleft 1s infinite;
+  position: absolute;
+  right: 10px;
+  height: 35px;
+  filter: invert(17%) sepia(61%) saturate(6917%) hue-rotate(255deg) brightness(87%) contrast(109%);
+  animation: slideleft 1s infinite;
 }
 
 @keyframes slideleft {
-    0% {
-        opacity: 0.2;
-        transform: translateX(-20px);
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0.2;
-        transform: translateX(0px);
-    }
+  0% {
+    opacity: 0.2;
+    transform: translateX(-20px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+    transform: translateX(0px);
+  }
 }
 
 .welcomeImg {
 
   position: relative;
-    height: 500px;
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    overflow: hidden;
-    @media screen and (max-width: 650px) {
-        height: 250px;
-        width: 250px;
-    }
-    @media screen and (max-width: 1100px) {
+  height: 500px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+
+  @media screen and (max-width: 650px) {
+    height: 250px;
+    width: 250px;
+  }
+
+  @media screen and (max-width: 1100px) {
     margin-top: 50px;
-    }
+  }
 }
 
 .bgForImg {
-    position: absolute;
-    height: 500px;
-    width: 500px;
-    background-color: #5221e6;
-    border-radius: 50%;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
-    @media screen and (max-width: 650px) {
-        height: 250px;
-        width: 250px;
-    }
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  background-color: #5221e6;
+  border-radius: 50%;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+
+  @media screen and (max-width: 650px) {
+    height: 250px;
+    width: 250px;
+  }
 }
 
 .welcomeImg img {
-    z-index: 5;
-    height: 500px;
-    @media screen and (max-width: 650px) {
-        height: 250px;
-    }
+  z-index: 5;
+  height: 500px;
+
+  @media screen and (max-width: 650px) {
+    height: 250px;
+  }
 }

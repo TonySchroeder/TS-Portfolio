@@ -19,15 +19,22 @@ export class MyWorkComponent implements OnInit {
   }
 
 
-/**
- * specify the values for VanillaTilt
- */
+  /**
+   * specify the values for VanillaTilt
+   */
   tiltValues() {
     VanillaTilt.init(document.querySelectorAll('.vanillaTilt') as any, {
       reverse: true,
+      max:5,
       scale: 1.1,
       speed: 400,
       perspective: 1000,
     });
   }
+
+
+
+
+
+
 }

@@ -12,15 +12,30 @@
     z-index: 1;
     margin-top: 50px;
     margin-bottom: 100px;
+    @media screen and (max-width: 450px) {
+      margin-top: 85px;
+  }
+}
+
+.mytext{
+  z-index: 2;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  @media screen and (max-width: 1032px) {
+    padding: 0 16px;
+}
 }
 
 .abouttext {
+  border-top: 2px solid white;
+  padding-top: 20px;
+  box-sizing: border-box;
   position: relative;
     display: flex;
     justify-content: space-between;
     gap: 16px;
     @media screen and (max-width: 832px) {
-        padding: 0 16px;
+        padding: 20px 16px;
         flex-direction: column;
         align-items: center;
     }

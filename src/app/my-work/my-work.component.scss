@@ -19,21 +19,24 @@
   flex-direction: column;
   gap: 10px;
   box-sizing: border-box;
-.firstBn{
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
+
+  .firstBn {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
   button {
     background: #5221e6;
     border: 1px solid white;
     color: white;
     height: 45px;
     transition: 155ms;
+
     &:hover {
-        transform: scale(1.1);
-        transition: 155ms;
+      transform: scale(1.1);
+      transition: 155ms;
     }
-      }
+  }
 
   div {
     display: flex;
@@ -42,10 +45,12 @@
 
     button {
       width: 130px;
-      &:first-child{
+
+      &:first-child {
         border-bottom-left-radius: 10px;
       }
-      &:last-child{
+
+      &:last-child {
         border-bottom-right-radius: 10px;
       }
 

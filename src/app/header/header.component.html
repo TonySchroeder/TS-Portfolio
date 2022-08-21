@@ -1,35 +1,35 @@
 <header [class.bg-tarnsparent]="headerVisibility == true">
 
-    <div class="headerUnderContainer">
+  <div class="headerUnderContainer">
 
-        <a href="#startID">
-            <img src="assets/img/logo.png" alt="">
-        </a>
+    <a href="#startID">
+      <img src="assets/img/logo.png" alt="">
+    </a>
 
-        <div class="navbar">
+    <div class="navbar">
 
-            <a href="#startID">Start</a>
-            <a href="#skillID">Skills</a>
-            <a href="#myWorkID">Portfolio</a>
-            <a href="#aboutMe">About</a>
-            <a href="#contactMe">Contact</a>
+      <a href="#startID">Start</a>
+      <a href="#skillID">Skills</a>
+      <a href="#myWorkID">Portfolio</a>
+      <a href="#aboutMe">About</a>
+      <a href="#contactMe">Contact</a>
 
-        </div>
-<!-- responsiv menu -->
-        <div class="responsiv-button">
-
-            <button (click)="openingMenu()">
-              <mat-icon  aria-hidden="false" aria-label="" fontIcon="menu"></mat-icon>
-            </button>
-            <div *ngIf="openMenu" class="responsiv-menu">
-                <button (click)="openingMenu()" mat-menu-item><a href="#startID">Start</a></button>
-                <button (click)="openingMenu()" mat-menu-item><a href="#skillID">Skills</a></button>
-                <button (click)="openingMenu()" mat-menu-item><a href="#myWorkID">Portfolio</a></button>
-                <button (click)="openingMenu()" mat-menu-item><a href="#aboutMe">About</a></button>
-                <button (click)="openingMenu()" mat-menu-item><a href="#contactMe">Contact</a></button>
-            </div>
-
-        </div>
     </div>
+
+    <div class="responsiv-button">
+
+        <button (click)="openingMenu()">
+          <mat-icon aria-hidden="false" aria-label="" fontIcon="menu"></mat-icon>
+        </button>
+        <div *ngIf="openMenu" class="responsiv-menu">
+          <button (click)="openingMenu()" mat-menu-item><a href="#startID">Start</a></button>
+          <button (click)="openingMenu()" mat-menu-item><a href="#skillID">Skills</a></button>
+          <button (click)="openingMenu()" mat-menu-item><a href="#myWorkID">Portfolio</a></button>
+          <button (click)="openingMenu()" mat-menu-item><a href="#aboutMe">About</a></button>
+          <button (click)="openingMenu()" mat-menu-item><a href="#contactMe">Contact</a></button>
+        </div>
+
+      </div>
+  </div>
 
 </header>
