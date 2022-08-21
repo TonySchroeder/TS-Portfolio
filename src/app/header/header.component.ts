@@ -15,6 +15,10 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  /**
+   * Header Background becomes transparent when scrolling
+   */
   @HostListener("window:scroll", []) onWindowScroll() {
     // do some stuff here when the window is scrolled
     const verticalOffset = window.pageYOffset
@@ -27,6 +31,10 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+
+/**
+ * responsive menu open or close
+ */
   openingMenu() {
     this.openMenu = !this.openMenu;
   }

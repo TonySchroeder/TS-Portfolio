@@ -6,44 +6,28 @@ import VanillaTilt from 'vanilla-tilt';
   selector: 'app-my-work',
   templateUrl: './my-work.component.html',
   styleUrls: ['./my-work.component.scss']
-
 })
 
 export class MyWorkComponent implements OnInit {
 
+  constructor() { }
 
-
-  constructor() {
-
-  }
 
   ngOnInit(): void {
     AOS.init();
-    VanillaTilt.init(document.querySelector('.vanillaTilt1') as any, {
-      reverse: true,
-      scale: 1.1,
-      speed: 400,
-      perspective: 1000,
+    this.tiltValues();
+  }
 
-    });
-    VanillaTilt.init(document.querySelector('.vanillaTilt2') as any, {
-      reverse: true,
-      scale: 1.1,
-      speed: 400,
-      perspective: 1000,
-    });
-    VanillaTilt.init(document.querySelector('.vanillaTilt3') as any, {
-      reverse: true,
-      scale: 1.1,
-      speed: 400,
-      perspective: 1000,
-    });
-    VanillaTilt.init(document.querySelector('.vanillaTilt4') as any, {
+
+/**
+ * specify the values for VanillaTilt
+ */
+  tiltValues() {
+    VanillaTilt.init(document.querySelectorAll('.vanillaTilt') as any, {
       reverse: true,
       scale: 1.1,
       speed: 400,
       perspective: 1000,
     });
   }
-
 }

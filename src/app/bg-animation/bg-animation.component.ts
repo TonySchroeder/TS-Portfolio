@@ -16,14 +16,18 @@ export class BgAnimationComponent implements OnInit {
   windowWidth: number = 833;
   showLight: boolean = true;
 
-  constructor() {
 
-  }
+  constructor() {}
 
   ngOnInit(): void {
   }
 
 
+/**
+ * assign window width
+ *
+ * @param event - window data
+ */
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
     this.windowWidth = event.target.innerWidth
@@ -31,10 +35,23 @@ export class BgAnimationComponent implements OnInit {
   }
 
 
+/**
+ * assign the mouse coordinates
+ *
+ * @param e - mouse move data
+ */
   onMouseMove(e: any) {
     this.mouseX = e.pageX;
     this.mouseY = e.pageY;
-    if (this.mouseY > 5000 && this.windowWidth >= 833) {
+    this.showBackLight();
+   }
+
+
+/**
+ * display the background lighting or not
+ */
+   showBackLight(){
+     if (this.mouseY > 5000 && this.windowWidth >= 833) {
       this.showLight = false;
     } else if (this.mouseY > 5650 && this.windowWidth <= 832) {
       this.showLight = false;
@@ -42,7 +59,6 @@ export class BgAnimationComponent implements OnInit {
       this.showLight = true;
     }
    }
-
 }
 
 
