@@ -10,6 +10,10 @@ import VanillaTilt from 'vanilla-tilt';
 
 export class MyWorkComponent implements OnInit {
 
+onlyJS: boolean = true
+onlyAngular: boolean = true
+
+
   constructor() { }
 
 
@@ -34,6 +38,24 @@ export class MyWorkComponent implements OnInit {
 
 
 
+selectAll(){
+this.onlyJS = true;
+this.onlyAngular = true;
+}
+
+
+
+selectAngular(){
+  this.onlyJS = false;
+  this.onlyAngular = true;
+}
+
+
+
+selectJS(){
+  this.onlyJS = true;
+  this.onlyAngular = false;
+}
 
 
 

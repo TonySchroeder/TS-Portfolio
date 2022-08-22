@@ -27,9 +27,11 @@
 
   button {
     background: #5221e6;
-    border: 1px solid white;
+    // border: 1px solid white;
+    border: none;
     color: white;
     height: 45px;
+    font-size: 16px;
     transition: 155ms;
 
     &:hover {

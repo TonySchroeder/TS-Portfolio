@@ -5,7 +5,6 @@ header {
   left: 0;
   right: 0;
   display: flex;
-  // width: 100vw;
   width: 100%;
   box-sizing: border-box;
   justify-content: center;
@@ -75,7 +74,6 @@ header {
     border: none;
     cursor: pointer;
     transition: 155ms;
-
     &:hover {
       transform: scale(1.15);
       transition: 155ms;

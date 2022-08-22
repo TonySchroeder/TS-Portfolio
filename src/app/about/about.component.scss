@@ -3,6 +3,7 @@
     align-items: center;
     flex-direction: column;
     color: white;
+    margin-bottom: 100px;
     @media screen and (max-width: 1032px) {
         padding: 0 16px;
     }
@@ -75,6 +76,7 @@
     width: 40px;
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(165deg) brightness(108%) contrast(100%);
 }
+
 
 
 
