@@ -1,88 +1,101 @@
 <div class="overContainer">
-    <div id="myWorkID" class="myWork widthContainer">
+  <div id="myWorkID" class="myWork widthContainer">
 
-        <h2>My Work</h2>
+    <h2>My Work</h2>
 
-<div class="select-container">
-  <button (click)="selectAll()" class="firstBn">All</button>
-  <div>
-    <button (click)="selectAngular()">Angular</button>
-    <button (click)="selectJS()">JavaScript</button>
-  </div>
-</div>
-
-      <!-- the-curse-of-money-island card -->
-      <div *ngIf="onlyJS">
-        <div data-aos="zoom-in-left" id="cartID1" class="cartContainer vanillaTilt" data-tilt>
-          <a href="https://the-curse-of-money-island.tony-schroeder.de" target="_blank" id="innerCard1" class="cart">
-            <div class="cartText">
-              <h3>The Curse of Money Island</h3>
-              <button class="cartButton">Open</button>
-            </div>
-            <div class="imageContainer">
-              <div class="innerImageContainer">
-                <img id="BigImgID1" class="flag" src="assets/img/curse-of-money.png" alt="">
-              </div>
-            </div>
-          </a>
-        </div>
+    <div class="select-container">
+      <button (click)="selectAll()" class="firstBn">All</button>
+      <div>
+        <button (click)="selectAngular()">Angular</button>
+        <button (click)="selectJS()">JavaScript</button>
       </div>
-<!-- ring-of-fire card -->
-        <div *ngIf="onlyAngular" data-aos="zoom-in-right" id="cartID2" class="cartContainer vanillaTilt" data-tilt>
-            <a href="https://ring-of-fire.tony-schroeder.de" target="_blank"  id="innerCard2 " class="cart ">
-                <div class="cartText ">
-                    <h3>Ring of Fire</h3>
-                    <button class="cartButton ">Open</button>
-                </div>
-                <div class="imageContainer ">
-                    <div class="innerImageContainer">
-                        <img id="BigImgID2" class="flag " src="assets/img/fire-ring.png" alt=" ">
-                    </div>
-                </div>
-            </a>
-        </div>
-<!-- join card -->
-        <div *ngIf="onlyJS" data-aos="zoom-in-left" id="cartID3 " class="cartContainer vanillaTilt" data-tilt>
-            <a  href="https://join.tony-schroeder.de" target="_blank"  id="innerCard3 " class="cart ">
-                <div class="cartText ">
-                    <h3>Join</h3>
-                    <button class="cartButton ">Open</button>
-                </div>
-                <div class="imageContainer ">
-                    <div class="innerImageContainer ">
-                        <img id="BigImgID3" class="flag " src="assets/img/join.png" alt=" ">
-                    </div>
-                </div>
-            </a>
-        </div>
-<!-- tic-tac-toe card -->
-        <div *ngIf="onlyJS" data-aos="zoom-in-right" id="cartID4 " class="cartContainer vanillaTilt" data-tilt>
-            <a  href="https://tic-tac-toe.tony-schroeder.de" target="_blank"  id="innerCard4 " class="cart ">
-                <div class="cartText ">
-                    <h3>Tic Tac Toe</h3>
-                    <button class="cartButton ">Open</button>
-                </div>
-                <div class="imageContainer ">
-                    <div class="innerImageContainer ">
-                        <img id="BigImgID4" class="flag " src="assets/img/tic-tac-toe.png" alt=" ">
-                    </div>
-                </div>
-            </a>
-        </div>
-        <!-- portfolio card -->
-        <div data-aos="zoom-in-right" id="cartID2" class="cartContainer vanillaTilt" data-tilt>
-          <a href="https://tony-schroeder.de" target="_blank"  id="innerCard2 " class="cart ">
-              <div class="cartText ">
-                  <h3>Portfolio</h3>
-                  <button class="cartButton ">Open</button>
-              </div>
-              <div class="imageContainer ">
-                  <div class="innerImageContainer">
-                      <img id="BigImgID2" class="flag " src="assets/img/portfolio.png" alt=" ">
-                  </div>
-              </div>
-          </a>
-      </div>
-
     </div>
+
+    <!-- the-curse-of-money-island card -->
+    <div [class.d-none]="!onlyJS">
+      <div id="cartID1" class="cartContainer vanillaTilt" data-tilt>
+        <a href="https://the-curse-of-money-island.tony-schroeder.de" target="_blank" id="innerCard1" class="cart">
+          <div class="cartText">
+            <h3>The Curse of Money Island</h3>
+            <span class="instruction">JavaScript - based jump and run game.</span>
+            <button class="cartButton">Open</button>
+          </div>
+          <div class="imageContainer">
+            <div class="innerImageContainer">
+              <img id="BigImgID1" class="flag" src="assets/img/curse-of-money.png" alt="">
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- ring-of-fire card -->
+    <div [class.d-none]="!onlyAngular">
+      <div id="cartID2" class="cartContainer vanillaTilt" data-tilt>
+        <a href="https://ring-of-fire.tony-schroeder.de" target="_blank" id="innerCard2 " class="cart ">
+          <div class="cartText">
+            <h3>Ring of Fire</h3>
+            <span>Angular - based drink game.</span>
+            <button class="cartButton ">Open</button>
+          </div>
+          <div class="imageContainer ">
+            <div class="innerImageContainer">
+              <img id="BigImgID2" class="flag " src="assets/img/fire-ring.png" alt=" ">
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- join card -->
+    <div [class.d-none]="!onlyJS">
+      <div id="cartID3 " class="cartContainer vanillaTilt" data-tilt>
+        <a href="https://join.tony-schroeder.de" target="_blank" id="innerCard3 " class="cart ">
+          <div class="cartText">
+            <h3>Join</h3>
+            <span>JavaScript - based canban board.</span>
+            <button class="cartButton ">Open</button>
+          </div>
+          <div class="imageContainer ">
+            <div class="innerImageContainer ">
+              <img id="BigImgID3" class="flag " src="assets/img/join.png" alt=" ">
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- portfolio card -->
+    <div [class.d-none]="!onlyAngular">
+      <div id="cartID2" class="cartContainer vanillaTilt" data-tilt>
+        <a href="https://tony-schroeder.de" target="_blank" id="innerCard2 " class="cart ">
+          <div class="cartText">
+            <h3>Portfolio</h3>
+            <span>My Portfolio built with Angular.</span>
+            <button class="cartButton ">Open</button>
+          </div>
+          <div class="imageContainer ">
+            <div class="innerImageContainer">
+              <img id="BigImgID2" class="flag " src="assets/img/portfolio.png" alt=" ">
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- tic-tac-toe card -->
+    <div [class.d-none]="!onlyJS">
+      <div id="cartID4 " class="cartContainer vanillaTilt" data-tilt>
+        <a href="https://tic-tac-toe.tony-schroeder.de" target="_blank" id="innerCard4 " class="cart ">
+          <div class="cartText">
+            <h3>Tic Tac Toe</h3>
+            <span>JavaScript - based simple game.</span>
+            <button class="cartButton ">Open</button>
+          </div>
+          <div class="imageContainer ">
+            <div class="innerImageContainer ">
+              <img id="BigImgID4" class="flag " src="assets/img/tic-tac-toe.png" alt=" ">
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
 </div>

@@ -1,10 +1,10 @@
 .skills {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    margin-bottom: 100px;
-    box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  margin-bottom: 60px;
+  box-sizing: border-box;
 
 }
 
@@ -14,114 +14,125 @@
 // }
 
 .skills h2 {
-    z-index: 1;
-    margin-bottom: 100px;
-        margin-top: 100px;
+  z-index: 1;
+  margin-top: 80px;
+  margin-bottom: 100px;
 }
 
 .iconContainer {
-    display: flex;
-    gap: 80px;
-    @media screen and (max-width: 632px) {
-        gap: 40px;
-    }
-    @media screen and (max-width: 316px) {
-        display: none;
-    }
+  display: flex;
+  gap: 80px;
+
+  @media screen and (max-width: 632px) {
+    gap: 40px;
+  }
+
+  @media screen and (max-width: 316px) {
+    display: none;
+  }
 }
 
 .iconContainer-responiv {
-    display: none;
-    @media screen and (max-width: 316px) {
-        display: flex;
-        gap: 40px;
-    }
+  display: none;
+
+  @media screen and (max-width: 316px) {
+    display: flex;
+    gap: 40px;
+  }
 }
 
 .iconContainer div,
 .iconContainer-responiv div {
-    gap: 80px;
-    @media screen and (max-width: 632px) {
-        gap: 40px;
-    }
+  gap: 80px;
+
+  @media screen and (max-width: 632px) {
+    gap: 40px;
+  }
 }
 
 .iconContainer i,
 .iconContainer-responiv i {
-    position: relative;
-    display: flex;
-    justify-content: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .iconContainer span,
 .iconContainer-responiv span {
-    z-index: 2;
-    height: 120px;
-    width: 120px;
-    display: flex;
-    padding: 15px;
-    justify-content: center;
-    align-items: center;
-    background: #5221e6;
-    border-radius: 50%;
-    box-sizing: border-box;
-    transition: 255ms;
-    @media screen and (max-width: 632px) {
-        height: 55px;
-        width: 55px;
-        padding: 7px;
-        img {
-            height: 35px;
-            object-fit: contain;
-        }
+  z-index: 2;
+  height: 120px;
+  width: 120px;
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  background: #5221e6;
+  border-radius: 50%;
+  box-sizing: border-box;
+  transition: 255ms;
+
+  img {
+    height: 80px;
+    object-fit: contain;
+  }
+
+  @media screen and (max-width: 632px) {
+    height: 55px;
+    width: 55px;
+    padding: 7px;
+
+    img {
+      height: 35px;
+      object-fit: contain;
     }
+  }
 }
 
 .iconContainer u,
 .iconContainer-responiv u {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background: white;
-    text-align: center;
-    border-radius: 20px;
-    height: 120px;
-    width: 180px;
-    padding-bottom: 25px;
-    text-decoration: none;
-    position: absolute;
-    top: 60px;
-    color: black;
-    box-sizing: border-box;
-    transition: 255ms;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
-    @media screen and (max-width: 632px) {
-        height: 60px;
-        width: 90px;
-        top: 30px;
-        font-size: 10px;
-        padding-bottom: 7px;
-        border-radius: 12px;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: white;
+  text-align: center;
+  border-radius: 20px;
+  height: 120px;
+  width: 180px;
+  padding-bottom: 25px;
+  text-decoration: none;
+  position: absolute;
+  top: 60px;
+  color: black;
+  box-sizing: border-box;
+  transition: 255ms;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+
+  @media screen and (max-width: 632px) {
+    height: 60px;
+    width: 90px;
+    top: 30px;
+    font-size: 10px;
+    padding-bottom: 7px;
+    border-radius: 12px;
+  }
 }
 
 .purplefilter {
-    filter: invert(18%) sepia(60%) saturate(2635%) hue-rotate(243deg) brightness(83%) contrast(119%);
+  filter: invert(18%) sepia(60%) saturate(2635%) hue-rotate(243deg) brightness(83%) contrast(119%);
 }
 
 #right_skill_in,
 #left_skill_in {
-    display: none;
-    @media screen and (max-width: 1032px) {
-        display: flex;
-    }
+  display: none;
+
+  @media screen and (max-width: 1032px) {
+    display: flex;
+  }
 }
 
 #left_skill_out,
 #right_skill_out {
-    @media screen and (max-width: 1032px) {
-        display: none;
-    }
+  @media screen and (max-width: 1032px) {
+    display: none;
+  }
 }
-
-

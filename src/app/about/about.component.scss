@@ -1,30 +1,51 @@
 #aboutMe {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    margin-bottom: 100px;
-    @media screen and (max-width: 1032px) {
-        padding: 0 16px;
-    }
-}
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  margin-bottom: 100px;
 
-#aboutMe h2 {
-    z-index: 1;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    @media screen and (max-width: 450px) {
-      margin-top: 85px;
+  @media screen and (max-width: 1032px) {
+    padding: 0 16px;
   }
 }
 
-.mytext{
+#aboutMe h2 {
+  z-index: 1;
+  margin-top: 50px;
+  margin-bottom: 100px;
+
+  @media screen and (max-width: 450px) {
+    margin-top: 85px;
+  }
+}
+
+.mytext {
   z-index: 2;
+  position: relative;
   box-sizing: border-box;
-  margin-bottom: 16px;
+  // margin-bottom: 16px;
+  padding-bottom: 16px;
+
+
+  span {
+    margin-top: 150px;
+    text-align: justify;
+    margin-bottom: 16px;
+  }
+
+  .myimage {
+    height: 200px;
+    float: left;
+    shape-outside: url(../../assets/img/transparent-smal.png);
+    shape-margin: 12px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
   @media screen and (max-width: 1032px) {
     padding: 0 16px;
-}
+  }
 }
 
 .abouttext {
@@ -32,55 +53,51 @@
   padding-top: 20px;
   box-sizing: border-box;
   position: relative;
-    display: flex;
-    justify-content: space-between;
-    gap: 16px;
-    @media screen and (max-width: 832px) {
-        padding: 20px 16px;
-        flex-direction: column;
-        align-items: center;
-    }
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+
+  @media screen and (max-width: 832px) {
+    padding: 20px 16px;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .abouttext div {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    @media screen and (max-width: 832px) {
-        margin-bottom: 16px;
-        width: 80%;
-    }
-    @media screen and (max-width: 400px) {
-        width: 100%;
-    }
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @media screen and (max-width: 832px) {
+    margin-bottom: 16px;
+    width: 80%;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
 }
 
 .abouttext i {
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    background: #5221e6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-    @media screen and (max-width: 832px) {
-        margin-bottom: 16px;
-    }
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background: #5221e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 832px) {
+    margin-bottom: 16px;
+  }
 }
 
 .abouttext img {
-    height: 40px;
-    width: 40px;
-    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(165deg) brightness(108%) contrast(100%);
+  height: 40px;
+  width: 40px;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(165deg) brightness(108%) contrast(100%);
 }
-
-
-
-
-
-
-
-

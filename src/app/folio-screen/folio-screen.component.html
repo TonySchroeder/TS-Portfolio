@@ -1,4 +1,8 @@
 <!-- <app-bg-animation></app-bg-animation> -->
+<div class="bgContainer">
+  <ng-particles [id]="id" [options]="particlesOptions" [particlesInit]="particlesInit"
+  (particlesLoaded)="particlesLoaded($event)"></ng-particles>
+</div>
 <div>
     <app-start-side></app-start-side>
     <app-skills></app-skills>
