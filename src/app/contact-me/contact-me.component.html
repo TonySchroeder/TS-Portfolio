@@ -1,30 +1,42 @@
 <div id="contactMe" class="overContainer">
-    <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500" data-aos-duration="1000" id="contactID" class="widthContainer ">
-        <div class="purpleBG">
-            <div id="leftBGID" class="leftBG"></div>
+  <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500" data-aos-duration="1000" id="contactID"
+    class="widthContainer ">
+    <div class="purpleBG">
+      <div id="leftBGID" class="leftBG"></div>
 
-            <div class="textFooterContainer">
-                <span>To get in touch with me and explore our joint opportunities, simply use this form</span>
-                <span>or email me directly at <a class="mail-link" href="mailto:mail@tony.schroeder.de">mail@tony.schroeder.de</a></span>
-            </div>
+      <div class="textFooterContainer">
+        <h1>Contact me.</h1>
+        <span>To get in touch with me and explore our joint opportunities, simply use this form
+          or email me directly at <a class="mail-link"
+            href="mailto:mail@tony.schroeder.de">mail@tony.schroeder.de</a></span>
+      </div>
 
-            <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)" ngNativeValidate novalidate  class="contactUnderContainer">
-
-                <input id="name" name="name" ngModel #name="ngModel" placeholder="Enter your name" required>
-
-                <input id="email" type="email" name="email" ngModel #email="ngModel" placeholder="Enter your Email address" required>
-
-                <textarea (focus)="addHight()" [class.biggerInput]="biggerInput"  id="message" name="message" ngModel rows="1" placeholder="Enter your message" required></textarea>
-
-                <button [disabled]="!myForm.valid" class="contactButton" >Send</button>
-
-                <div *ngIf="submitComplete" class="reportBox">
-                  <p>{{ submitReport }}</p>
-                  <button (click)="closeCard()">OK</button>
-                </div>
-
-            </form>
-
+      <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)" ngNativeValidate novalidate class="contactUnderContainer">
+        <div class="inputfiels">
+          <span>Name</span><br><br>
+          <input id="name" name="name" ngModel #name="ngModel" required>
         </div>
+
+        <div class="inputfiels">
+          <span>Email address</span><br><br>
+          <input id="email" type="email" name="email" ngModel #email="ngModel" required>
+        </div>
+
+        <div class="inputfiels">
+          <span>Message</span><br><br>
+          <textarea (focus)="addHight()" [class.biggerInput]="biggerInput" id="message" name="message" ngModel rows="3"
+            required></textarea>
+        </div>
+
+        <button [disabled]="!myForm.valid" class="contactButton">Send</button>
+
+        <div *ngIf="submitComplete" class="reportBox">
+          <p>{{ submitReport }}</p>
+          <button (click)="closeCard()">OK</button>
+        </div>
+
+      </form>
+
     </div>
+  </div>
 </div>

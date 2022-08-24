@@ -141,8 +141,8 @@ text-align: center;
 .welcomeImg {
 
   position: relative;
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,8 +161,8 @@ text-align: center;
 
 .bgForImg {
   position: absolute;
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
   background-color: #5221e6;
   border-radius: 50%;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
@@ -175,7 +175,7 @@ text-align: center;
 
 .welcomeImg img {
   z-index: 5;
-  height: 700px;
+  height: 600px;
 
   @media screen and (max-width: 650px) {
     height: 350px;

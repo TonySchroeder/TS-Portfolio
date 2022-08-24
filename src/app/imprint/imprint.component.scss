@@ -1,7 +1,10 @@
 .impressum{
-  padding:  16px;
+  padding: 16px 0;
   color: white;
   a{
     color: white;
+  }
+  @media screen and (max-width: 1032px) {
+    padding: 16px;
   }
 }
