@@ -149,7 +149,7 @@ h1{
   cursor: pointer;
   transition: 155ms;
 
-  &:hover {
+  &:hover:enabled {
     transform: scale(1.1);
     transition: 155ms;
   }
