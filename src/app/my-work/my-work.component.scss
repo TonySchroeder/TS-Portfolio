@@ -119,13 +119,15 @@
   color: black;
   padding: 10px;
   box-sizing: border-box;
-  h3{
+
+  h3 {
     margin-top: 0;
 
   }
 
   .instruction {
     text-decoration: none !important;
+
     @media screen and (max-width: 900px) {
       font-size: 12px;
     }
@@ -171,8 +173,6 @@
   object-fit: cover;
 }
 
-
-
 .flag {
   z-index: 2;
   height: 100%;
@@ -181,12 +181,31 @@
 }
 
 .cartButton {
-  padding: 8px 80px;
+  padding: 8px;
+  width: 100px;
+  text-align: center;
   background: #5221e6;
   color: white;
   border: 2px solid #5221e6;
-  border-radius: 20px;
+  // border-radius: 20px;
   text-decoration: none;
   font-size: 20px;
   cursor: pointer;
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
+
+  &:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: 1px solid white;
+  }
+
+  &:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: 1px solid white;
+  }
 }
