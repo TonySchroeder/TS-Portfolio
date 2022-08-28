@@ -8,9 +8,12 @@
 
 .myWork h2 {
   z-index: 1;
-  margin: 100px 0;
+  margin: 200px 0 150px 0;
 }
 
+h3{
+  text-decoration: underline;
+}
 .select-container {
   z-index: 2;
   height: 100px;
@@ -62,6 +65,7 @@
 }
 
 .cartContainer {
+  margin-top: 50px;
   height: 400px;
   width: 900px;
   display: flex;
