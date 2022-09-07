@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Tony-Schroeder-Portfolio';
 
+  pageLoaded: boolean = false;
+
+
+  @HostListener('window:load')
+  onLoad() {
+    console.log('is window:load');
+    this.pageLoaded = true;
+  }
 
 }

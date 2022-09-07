@@ -56,7 +56,10 @@ text-align: center;
 .welcomeText u {
   z-index: 5;
   text-decoration: none;
-  color: #5221e6;
+  a{
+    text-decoration: none;
+    color: #5221e6;
+}
 }
 
 .welcomeContact {
@@ -90,6 +93,7 @@ text-align: center;
     width: 230px;
   }
 }
+
 
 #talkID {
   text-decoration: none;

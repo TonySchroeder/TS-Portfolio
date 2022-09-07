@@ -40,7 +40,7 @@ body {
     width: 100%;
 }
 
-cursor_pointer {
+.cursor_pointer {
     cursor: pointer;
 }
 
@@ -54,6 +54,9 @@ cursor_pointer {
 
 .d-none {
     display: none;
+}
+.d-block {
+    display: block;
 }
 
 .f-dire-colum {

@@ -20,6 +20,7 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { FolioScreenComponent } from './folio-screen/folio-screen.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LoaderComponent } from './loader/loader.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { HttpClientModule } from '@angular/common/http';
       ImprintComponent,
       FolioScreenComponent,
       DataProtectionComponent,
+      LoaderComponent,
   ],
   imports: [
     BrowserModule,
